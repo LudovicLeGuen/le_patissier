@@ -1,0 +1,24 @@
+.banner{
+    background-color: red;
+}
+
+#page-wrapper {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+}
+
+.search {
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: .025em;
+    font-size: 1.2em;
+    padding-left: 1em;
+    height: 45px;
+    box-sizing: border-box;
+    background-color: #f4f3f3;
+    color: #2b3344;
+    border: 0;
+    border-radius: 12px 0 0 12px;
+    flex: 1 1 auto;
+}
+
