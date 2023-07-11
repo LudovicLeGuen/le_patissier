@@ -107,6 +107,8 @@ body {
     max-width: 1440px;
     margin: 0 auto 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -116,8 +118,18 @@ body {
     object-fit: contain;
 }
 
-#button-hero{
+#button-hero {
+    background-color: white;
+    color: #736D69;
     position: absolute;
-    background-color: #736D69 ;
-    color: white;
+    bottom: 50px;
+    margin: 0 auto;
+    border: #9D6133;
+    border-style: double;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+#button-hero a {
+    font-size: 2.5em;
 }
