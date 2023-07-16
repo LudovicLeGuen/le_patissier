@@ -20,12 +20,12 @@
                 Utensils
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Blow Torches</a>
-                <a href="" class="dropdown-item">Brushes</a>
-                <a href="" class="dropdown-item">Dough Scrappers</a>
-                <a href="" class="dropdown-item">Knives</a>                
-                <a href="" class="dropdown-item">Pastry Bags</a>
-                <a href="" class="dropdown-item">Rolling Pins</a>
+                <a href="{% url 'products' %}?category=blow_torches" class="dropdown-item">Blow Torches</a>
+                <a href="{% url 'products' %}?category=brushes" class="dropdown-item">Brushes</a>
+                <a href="{% url 'products' %}?category=dough_scarppers" class="dropdown-item">Dough Scrappers</a>
+                <a href="{% url 'products' %}?category=knives" class="dropdown-item">Knives</a>                
+                <a href="{% url 'products' %}?category=pastry_bags" class="dropdown-item">Pastry Bags</a>
+                <a href="{% url 'products' %}?category=rolling_pins" class="dropdown-item">Rolling Pins</a>
             </div>
         </li>
 
@@ -35,9 +35,9 @@
                 Frames
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">                
-                <a href="" class="dropdown-item">Mousse Frames</a>
-                <a href="" class="dropdown-item">Squares &amp; Rectangles</a>
-                <a href="" class="dropdown-item">Tart Frames</a>
+                <a href="{% url 'products' %}?category=mousse_frames" class="dropdown-item">Mousse Frames</a>
+                <a href="{% url 'products' %}?category=squares,rectangles" class="dropdown-item">Squares &amp; Rectangles</a>
+                <a href="{% url 'products' %}?category=tart_frames" class="dropdown-item">Tart Frames</a>
             </div>
         </li>
 
@@ -47,9 +47,9 @@
                 Cake Molds
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Brioche</a>
-                <a href="" class="dropdown-item">Brownies</a>
-                <a href="" class="dropdown-item">Cupcakes</a>           
+                <a href="{% url 'products' %}?category=brioche" class="dropdown-item">Brioche</a>
+                <a href="{% url 'products' %}?category=brownies" class="dropdown-item">Brownies</a>
+                <a href="{% url 'products' %}?category=cupcakes" class="dropdown-item">Cupcakes</a>           
             </div>
         </li>
 
@@ -59,8 +59,8 @@
                 Oven
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Baking Sheets</a>
-                <a href="" class="dropdown-item">Silicone Mats</a>
+                <a href="{% url 'products' %}?category=baking_sheets" class="dropdown-item">Baking Sheets</a>
+                <a href="{% url 'products' %}?category=silicone_mats" class="dropdown-item">Silicone Mats</a>
             </div>
         </li>
 
@@ -70,8 +70,8 @@
                 Discounts
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
                 <a href="" class="dropdown-item">All Discounts</a>
             </div>
         </li>
