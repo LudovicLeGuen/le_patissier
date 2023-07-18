@@ -40,7 +40,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    discount = models.IntegerField(blank=True, null=True)
+    discount = models.IntegerField(blank=True, null=True, default=0)
     discounted_price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True
@@ -54,7 +54,12 @@ class Product(models.Model):
 
     @property
     def discounted_price(self):
-        return round((self.price-((self.price*self.discount)/100)), 2)
+        if self.price and self.discount:
+            subtotal = (self.price-((self.price*self.discount)/100))
+            return round(subtotal, 2)
+
+        else:
+            return None
 
     def __str__(self):
         return self.name

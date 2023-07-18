@@ -1,16 +1,17 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Brand
 
 
-# Copied fron Ado Boutique
+# Copied from Ado Boutique
 def all_products(request):
     """ This view shows all products, sorts and searches """
 
     products = Product.objects.all()
     query = None
     categories = None
+    brands = None
     sort = None
     direction = None
 
@@ -19,6 +20,8 @@ def all_products(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
+            print(sort)
+
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
@@ -27,12 +30,18 @@ def all_products(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
+
             products = products.order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+        if 'brand' in request.GET:
+            brands = request.GET['brand'].split(',')
+            products = products.filter(brand__name__in=brands)
+            brands = Brand.objects.filter(name__in=brands)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -52,7 +61,7 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """ this view shows individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
 
@@ -61,3 +70,26 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def all_brands(request):
+    """ This view shows all the brands """
+
+    brands = Brand.objects.all()
+    products = Product.objects.all()
+    names = None
+    brand = None
+
+    if request.GET:
+
+        if 'brand' in request.GET:
+            brand = request.GET['brand'].split(',')
+            products = products.filter(brand__name__in=brand)
+            brand = Brand.objects.filter(name__in=brand)
+
+    context = {
+        'brands': brands,
+        'products': products,
+    }
+
+    return render(request, 'products/all_brands.html', context)

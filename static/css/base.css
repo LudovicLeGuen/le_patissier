@@ -198,3 +198,10 @@ body {
     font-size: 200%;
     letter-spacing: 1.5px;
 }
+
+.brand-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}

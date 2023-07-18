@@ -32,7 +32,7 @@
                             </a>
                             {% else %}
                             <a href="{% url 'product_detail' product.id %}">
-                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}test.png"
                                     alt="{{ product.name }}">
                             </a>
                             {% endif %}
@@ -46,16 +46,16 @@
                             <p class="mb-0 text-center font-weight-bold">{{ product.name }}</p>
                         </div>
                         <div class="card-body pb-0">
-                            <p class="mb-0 text-center">{{ product.brand.friendly_name }}</p>
+                            <p class="mb-0 text-center"><a href="{% url 'products' %}?brand={{ product.brand.name }}">{{ product.brand.friendly_name }}</a></p>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             {% if product.discount != 0 %}
                             <div class="row price-row">
-                                <div class="col-6 ">
+                                <div class="col-6 pr-1">
                                     <p class="text-muted lead mb-0 text-right old-price">{{ product.price }} €
                                     </p>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 pl-1">
                                     <p class="mb-0 text-left font-weight-bold price">{{ product.discounted_price }}
                                         €</p>
                                 </div>

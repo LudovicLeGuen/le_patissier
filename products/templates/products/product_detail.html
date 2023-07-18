@@ -40,8 +40,8 @@
                         -{{ product.discount }}%
                     </div>
                     <p><span style="font-size: large;
-                        color: #9D6133; font-weight: bold; font-size: 200%; letter-spacing: 1.5px;">{{ product.discounted_price }}€ </span><span style="font-size: small;
-                        text-decoration: line-through;">{{ product.price }}€</span>
+                        color: #9D6133; font-weight: bold; font-size: 200%; letter-spacing: 1.5px;">{{ product.discounted_price }}€ </span>
+                        <span style="font-size: small; text-decoration: line-through;">{{ product.price }}€</span>
                     </p>
                 {% else %}
                     <p class="mb-0 detail-price">{{ product.price }} €</p>

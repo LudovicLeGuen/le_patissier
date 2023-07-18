@@ -9,7 +9,7 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item ">By Brand</a>
+                <a href="{% url 'all_brands' %}" class="dropdown-item ">By Brand</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -22,7 +22,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=blow_torches" class="dropdown-item">Blow Torches</a>
                 <a href="{% url 'products' %}?category=brushes" class="dropdown-item">Brushes</a>
-                <a href="{% url 'products' %}?category=dough_scarppers" class="dropdown-item">Dough Scrappers</a>
+                <a href="{% url 'products' %}?category=dough_scrappers" class="dropdown-item">Dough Scrappers</a>
                 <a href="{% url 'products' %}?category=knives" class="dropdown-item">Knives</a>                
                 <a href="{% url 'products' %}?category=pastry_bags" class="dropdown-item">Pastry Bags</a>
                 <a href="{% url 'products' %}?category=rolling_pins" class="dropdown-item">Rolling Pins</a>
@@ -72,7 +72,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?discount!=0" class="dropdown-item">All Discounts</a>
+                <a href="{% url 'products' %}?sort=discount&direction=desc" class="dropdown-item">All Discounts</a>
             </div>
         </li>
     </ul>
