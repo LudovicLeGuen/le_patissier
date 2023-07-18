@@ -29,7 +29,7 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0 font-weight-bold text-uppercase">{{ product.name }} <hr></p>
-                <p class="mb-0 brand-detail">{{ product.brand.friendly_name }} <hr></p>
+                <p class="mb-0 brand-detail"><a href="{% url 'products' %}?brand={{ product.brand.name }}">{{ product.brand.friendly_name }}</a> <hr></p>
                 {% if product.rating %}
                     <small><i class="fas fa-star mr-1" style='color: #ffd700'></i>{{ product.rating }} / 5</small>
                 {% else %}

@@ -179,7 +179,6 @@ body {
 }
 
 /* Detail page*/
-
 .brand-detail {
     padding: 5px 0px;
 }
@@ -199,9 +198,11 @@ body {
     letter-spacing: 1.5px;
 }
 
+/* Brand card*/
 .brand-img {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 225px;
+    object-fit: contain
 }
