@@ -79,17 +79,16 @@ def all_brands(request):
 
     brands = Brand.objects.all()
     products = Product.objects.all()
-    names = None
-    brand = None
+    marks = None
     sort = None
     direction = None
 
     if request.GET:
 
         if 'brand' in request.GET:
-            brand = request.GET['brand'].split(',')
-            products = products.filter(brand__name__in=brand)
-            brand = Brand.objects.filter(name__in=brand)
+            marks = request.GET['name'].split(',')
+            products = products.filter(mark__name__in=marks)
+            mark = Brand.objects.filter(name__in=mark)
 
     current_sorting = f'{sort}_{direction}'
 
