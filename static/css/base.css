@@ -148,6 +148,7 @@ body {
 /* Product card*/
 .img-container {
     position: relative;
+    object-fit: scale-down;
 }
 
 .discount-banner {
@@ -197,6 +198,40 @@ body {
     font-size: 200%;
     letter-spacing: 1.5px;
 }
+
+.add-basket-btn{
+    background-color: #060B06;
+    color: white!important;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.add-basket-btn:hover,
+.add-basket-btn:active,
+.add-basket-btn:focus {
+    background: White;
+    color: #060B06 !important;
+    border: 1px solid #060B06;
+}
+
+.keep-shopping-btn {
+    background: white;
+    color: #060B06 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #060B06;
+}
+
+.keep-shopping-btn:hover,
+.keep-shopping-btn:active,
+.keep-shopping-btn:focus {
+    background: #060B06;
+    color: white !important;
+    border: 1px solid #060B06;
+}
+
+.qty_input{
+    width: 100%;
+}
+
 
 /* Brand card*/
 .brand-img {
