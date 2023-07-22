@@ -1,4 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
+
+from products.models import Product
 
 
 def view_basket(request):
@@ -10,6 +13,7 @@ def view_basket(request):
 def add_to_basket(request, item_id):
     """ Add the specified quantity of products to the basket """
 
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
@@ -18,9 +22,14 @@ def add_to_basket(request, item_id):
         basket[item_id] += quantity
     else:
         basket[item_id] = quantity
+        if quantity == 1:
+            messages.success(request, f'The {product.name} is in your basket')
+        else:
+            messages.success(
+                request, f'The {quantity} {product.name}s are in your basket'
+                 )
 
     request.session['basket'] = basket
-    print(request.session['basket'])
     return redirect(redirect_url)
 
 
