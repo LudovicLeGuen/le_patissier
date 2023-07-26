@@ -48,17 +48,20 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_basket = json.dumps(basket)
+            order.save()
             for item_id, item_data in basket.items():
                 try:
                     product = Product.objects.get(id=item_id)
-                    if isinstance(item_data, int):
-                        order_line_item = OrderLineItem(
-                            order=order,
-                            product=product,
-                            quantity=item_data,
-                        )
-                        order_line_item.save()
+                    order_line_item = OrderLineItem(
+                        order=order,
+                        product=product,
+                        quantity=item_data,
+                    )
+                    order_line_item.save()
 
                 except Product.DoesNotExist:
                     messages.error(request, (
@@ -114,8 +117,8 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. We sent a confirmation \
         email to {order.email}.')
 
-    if 'bag' in request.session:
-        del request.session['bag']
+    if 'basket' in request.session:
+        del request.session['basket']
 
     template = 'checkout/checkout_success.html'
     context = {
