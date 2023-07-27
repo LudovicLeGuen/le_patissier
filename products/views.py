@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category, Brand
+from .forms import ProductForm
 
 
 # Copied from Ado Boutique
@@ -99,3 +100,14 @@ def all_brands(request):
     }
 
     return render(request, 'products/all_brands.html', context)
+
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
