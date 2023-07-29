@@ -105,7 +105,7 @@ def all_brands(request):
 @login_required
 def add_product(request):
     """ Add a product to the store """
-     if not request.user.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'Sorry, you are not an admin. NO CAN DO!')
         return redirect(reverse('home'))
 
@@ -163,7 +163,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, you are not an admin. NO CAN DO!')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, f'The {product.name} is deleted!')
