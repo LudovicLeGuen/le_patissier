@@ -1,4 +1,6 @@
+from django.contrib.auth.models import User
 from django.db import models
+
 
 # Create your models here.
 
@@ -63,3 +65,28 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    """
+    Comment model class.
+
+    """
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="revies"
+        )
+    rating = models.IntegerField(default=3)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    created_by = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="reviews",
+        default="admin")
+    approved = models.BooleanField(default=False)
+
+    # Order of comments on screen: Oldest first
+    class Meta:
+        ordering = ['created_on']
+
+    # Title String Function
+    def __str__(self):
+        return f"Comment {self.body} by {self.created_by}"

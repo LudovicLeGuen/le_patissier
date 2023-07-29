@@ -4,7 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Brand
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
 
 # Copied from Ado Boutique
