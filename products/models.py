@@ -59,21 +59,30 @@ class Product(models.Model):
         if self.price and self.discount:
             subtotal = (self.price-((self.price*self.discount)/100))
             return round(subtotal, 2)
-
         else:
             return None
 
     def __str__(self):
         return self.name
 
+    def calc_rating(self):
+        reviews_total = 0
+        reviews_count = 0
+        for review in self.reviews.all():
+            if review.approved is True:
+                reviews_total += review.rating
+                reviews_count += 1
+        if reviews_total > 0:
+            return reviews_total / reviews_count
+
 
 class Review(models.Model):
     """
-    Comment model class.
+    Review model class.
 
     """
     product = models.ForeignKey(
-        Product, on_delete=models.CASCADE, related_name="revies"
+        Product, on_delete=models.CASCADE, related_name="reviews"
         )
     rating = models.IntegerField(default=3)
     body = models.TextField()

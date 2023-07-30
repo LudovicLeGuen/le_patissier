@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category, Brand
+from .models import Product, Category, Brand, Review
 from .forms import ProductForm, ReviewForm
 
 
@@ -67,6 +67,33 @@ def product_detail(request, product_id):
     """ This view shows individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == "POST":
+        rating = request.POST.get('rating', 3)
+        body = request.POST.get('body', '')
+
+        if body:
+            reviews = Review.objects.filter(created_by=request.user, product=product)
+
+            if reviews.count() > 0:
+                review = reviews.first()
+                review.rating = rating
+                review.body = body
+                review.save
+                print("this is the rating", rating)
+                print("this is the review", review.rating)
+                messages.success(request, f'Your { product.name } review is updated')
+
+            else:
+                review = Review.objects.create(
+                    product=product,
+                    rating=rating,
+                    body=body,
+                    created_by=request.user,
+                )
+                messages.success(request, f'Thank you for reviewing the { product.name }. Your review will be soon approved by an Administrator')
+
+            return redirect('product_detail', product_id)
 
     context = {
         'product': product,
