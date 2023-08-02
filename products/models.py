@@ -75,6 +75,13 @@ class Product(models.Model):
         if reviews_total > 0:
             return reviews_total / reviews_count
 
+    def approved_review(self):
+        approved_total = 0
+        for review in self.reviews.all():
+            if review.approved is True:
+                approved_total += 1
+        return approved_total
+
 
 class Review(models.Model):
     """

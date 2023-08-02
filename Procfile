@@ -1,0 +1,1 @@
+web: gunicorn le-patissier.wsgi:application

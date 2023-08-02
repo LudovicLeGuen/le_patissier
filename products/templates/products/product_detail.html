@@ -35,7 +35,12 @@
                     <hr>
                 </p>
                 {% if product.calc_rating > 0 %}                
-                    <small><i class="fas fa-star mr-1" style='color: #ffd700'></i>{{ product.calc_rating }} / 5 {{ reviews_count }} reviews</small> 
+                    <small><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ product.calc_rating }} / 5 | {{ product.approved_review }}
+                        {% if product.approved_review == 1 %}
+                            review 
+                        {% else %} 
+                            reviews
+                        {% endif %} </small>
                 {% else %}
                     {% if product.rating %}
                         <small><i class="fas fa-star mr-1" style='color: #ffd700'></i>{{ product.rating }} / 5 </small>
@@ -121,8 +126,12 @@
     <div class="row d-flex justify-content-center">
         {% if request.user.is_authenticated %}
         <form method="post" action=".">
-            {{reviews_form | crispy}}
             {% csrf_token %}
+                    {% for field in form %}
+                     
+                            {{ field | as_crispy_field }}
+
+                    {% endfor %}
 
             <div>
                 <label>Rating</label>
@@ -148,10 +157,10 @@
             </div>
         {% endif %}
     </div>
-    <div class="row d-flex justify-content-center flex-column m-auto"></div>
+    <div class="row d-flex justify-content-center flex-column m-auto my-5"></div>
         {% for review in product.reviews.all %}
             {% if review.approved == True %}
-                <div class="">
+                <div class="w-75 m-auto text-center">
                     <p><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ review.rating}} / 5  | <strong>{{ product.name}} - {{ product.brand.friendly_name }}</strong></p>
                     <p class="lead">{{ review.body }}</p>
                     <p class="text-mted">{{ review.created_by }} | {{ review.created_on|date:"d-M-Y" }} | Verified Purchase</p>
