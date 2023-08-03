@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-&0r9vq^q*1eo(r8&n4qj8e9+3z1f(^4t^elhvt1bd9lfjj$nvj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ludovicleguen-le-patissi-t4bzefwvs1.us2.codeanyapp.com', 'le-patissier.herokuapp.com']
+ALLOWED_HOSTS = ['le-patissier.herokuapp.com', '8000-ludovicleguen-le-patissi-t4bzefwvs1.us2.codeanyapp.com']
 
 
 # Application definition
