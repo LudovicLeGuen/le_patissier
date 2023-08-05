@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'basket',
     'checkout',
     'crispy_forms',
-    'crispy_bootstrap4',
     'stripe',
     'profiles',
 ]
@@ -65,8 +64,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'le_patissier.urls'
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
