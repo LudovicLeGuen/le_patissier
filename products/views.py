@@ -7,7 +7,7 @@ from .models import Product, Category, Brand, Review
 from .forms import ProductForm, ReviewForm
 
 
-# Copied from Ado Boutique
+# All copied from Ado Boutique
 def all_products(request):
     """ This view shows all products, sorts and searches """
 
@@ -68,21 +68,25 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    # Rating the products
+    # Inspired by Code With Stein: https://www.youtube.com/watch?v=8iCqlFyFu2s
     if request.method == "POST":
         rating = request.POST.get('rating', 3)
         body = request.POST.get('body', '')
 
         if body:
-            reviews = Review.objects.filter(created_by=request.user, product=product)
+            reviews = Review.objects.filter(created_by=request.user,
+                                            product=product
+                                            )
 
             if reviews.count() > 0:
                 review = reviews.first()
                 review.rating = rating
                 review.body = body
                 review.save
-                print("this is the rating", rating)
-                print("this is the review", review.rating)
-                messages.success(request, f'Your { product.name } review is updated')
+                messages.success(request,
+                                 f'Your { product.name } review is updated'
+                                 )
 
             else:
                 review = Review.objects.create(
@@ -91,7 +95,10 @@ def product_detail(request, product_id):
                     body=body,
                     created_by=request.user,
                 )
-                messages.success(request, f'Thank you for reviewing the { product.name }. Your review will be soon approved by an Administrator')
+                messages.success(request,
+                                 f'Thank you for reviewing \
+                                 the { product.name }.Your review\
+                                 will be soon approved by an Administrator')
 
             return redirect('product_detail', product_id)
 
@@ -143,7 +150,10 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add product. \
+                           Please ensure the form is valid.'
+                           )
     else:
         form = ProductForm()
 
@@ -167,10 +177,15 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, f'The {product.name} is successfully updated!')
+            messages.success(request,
+                             f'The {product.name} is successfully updated!'
+                             )
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update product. \
+                            Please ensure the form is valid.'
+                           )
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing the {product.name}')
