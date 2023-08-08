@@ -139,12 +139,8 @@
     {% endblock %}
 
     {% block content %}
-    <footer>
-        
-        {% include 'includes/footer-newsletter.html' %}
-        
-    </footer>
     {% endblock %}
+    <a class="btn" href="{% url 'subscribe' %}">Subscribe</a>
 
     {% block postloadjs %}
         <script type="text/javascript">

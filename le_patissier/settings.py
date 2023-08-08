@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True  # 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['le-patissier-b2d63743796c.herokuapp.com',
                  '8000-ludovicleguen-le-patissi-t4bzefwvs1.us2.codeanyapp.com',
@@ -46,12 +46,13 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'home',
-    'products',
     'basket',
     'checkout',
     'crispy_forms',
-    "crispy_bootstrap5",
+    'crispy_bootstrap5',
+    'home',
+    'marketing',
+    'products',
     'profiles',
     'storages',
     'stripe',
@@ -208,6 +209,9 @@ STRIPE_CURRENCY = 'EUR'
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
+MAILCHIMP_API_KEY = os.environ.get('MAILCHIMP_API_KEY', '')
+MAILCHIMP_REGION = os.environ.get('MAILCHIMP_REGION', '')
+MAILCHIMP_MARKETING_AUDIENCE_ID = os.environ.get('MAILCHIMP_MARKETING_AUDIENCE_ID', '')
 DEFAULT_FROM_EMAIL = 'lepatissier@example.com'
 
 if 'DEVELOPMENT' in os.environ:
