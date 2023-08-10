@@ -140,8 +140,126 @@
 
     {% block content %}
     {% endblock %}
-    <a class="btn" href="{% url 'subscribe' %}">Subscribe</a>
+            
+        <!-- Footer based on https://mdbootstrap.com/-->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center p-4 mt-5 border-bottom">
+      <div class="me-5 ">
+        <i class="fa-regular fa-envelope fa-2x align-middle"></i>  
+     <a class="btn btn-outline-dark font-weight-bold font-italic" href="{% url 'subscribe' %}">Subscribe to our Newsletter</a>  
+     <i class="fa-regular fa-envelope fa-2x align-middle"></i>
+      </div>
 
+    </section>
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+                Le Patissier
+            </h6>
+            <p>
+                <i class="fas fa-home me-3"></i> Chmelova 17, Bratislava
+            </p>
+            <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@le-patissier.com
+            </p>
+            <p>
+                <i class="fas fa-phone me-3"></i> + 33 12 345 678
+            </p>
+            </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Brands
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Mafetr</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Hendi</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Mallard Ferriere</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Hendi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Legal
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Terms and Conditions</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Our Guarantees</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Legal Statement</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Privacy Policy</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Social Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+            <p>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </p>
+            <p>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </p>
+            <p>
+                <a href="" class="me-4 text-reset">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </p>
+            <p>
+                <a href="" class="me-4 text-reset">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </p>            
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Code Institute's eCommerce Project by Ludovic Le Guen <a href="https://github.com/LudovicLeGuen/le_patissier" class="me-4 text-reset">
+        <i class="fa-brands fa-square-github"></i>
+      </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
     {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
