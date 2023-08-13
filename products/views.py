@@ -122,6 +122,7 @@ def all_brands(request):
 
         if 'brand' in request.GET:
             marks = request.GET['name'].split(',')
+            print("this are the marks:", marks)
             products = products.filter(mark__name__in=marks)
             mark = Brand.objects.filter(name__in=mark)
 

@@ -45,10 +45,10 @@ UPGRADE_FILE_LIST = [{"filename": ".vscode/settings.json",
                       },
                      {"filename": ".vscode/make_url.py",
                       "url": ".vscode/make_url.py"
-                     },
+                      },
                      {"filename": ".vscode/arctictern.py",
                       "url": ".vscode/arctictern.py"
-                     }]
+                      }]
 
 FINAL_LINES = "\nexport POST_UPGRADE_RUN=1\nsource ~/.bashrc\n"
 
@@ -61,12 +61,13 @@ def get_versions():
     else:
         with open(".vscode/version.txt", "w") as f:
             f.write(str(THIS_VERSION))
-    
+
     r = requests.get(BASE_URL + ".vscode/version.txt")
     CURRENT_VERSION = float(r.content)
 
     return {"this_version": THIS_VERSION,
             "current_version": CURRENT_VERSION}
+
 
 def needs_upgrade():
     """
@@ -97,7 +98,7 @@ def build_post_upgrade():
     upgrades = json.loads(r.content.decode("utf-8"))
     content = ""
 
-    for k,v in upgrades.items():
+    for k, v in upgrades.items():
         if float(k) > THIS_VERSION:
             print(f"Adding version changes for {k} to post_upgrade.sh")
             content += v
@@ -106,7 +107,7 @@ def build_post_upgrade():
         content += FINAL_LINES
         with open(".vscode/post_upgrade.sh", "w") as f:
             f.writelines(content)
-    
+
     print("Built post_upgrade.sh. Restart your workspace for it to take effect.")
 
 
@@ -153,7 +154,7 @@ def start_migration():
         result = process(file["filename"], file["url"])
         if result == True:
             push_and_recreate = True
-    
+
     if push_and_recreate:
         write_version()
 
