@@ -114,17 +114,17 @@ def all_brands(request):
 
     brands = Brand.objects.all()
     products = Product.objects.all()
-    marks = None
+    brand = None
     sort = None
     direction = None
 
     if request.GET:
 
         if 'brand' in request.GET:
-            marks = request.GET['name'].split(',')
-            print("this are the marks:", marks)
-            products = products.filter(mark__name__in=marks)
-            mark = Brand.objects.filter(name__in=mark)
+            brands = request.GET['brand'].split(',')
+            products = products.filter(brand__name__in=brands)
+            print("this is the brand products", products)
+            brands = Brand.objects.filter(name__in=brands)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -135,6 +135,34 @@ def all_brands(request):
     }
 
     return render(request, 'products/all_brands.html', context)
+
+
+def one_brand(request):
+    """ This view shows all products of 1 brand """
+
+    brands = Brand.objects.all()
+    products = Product.objects.all()
+    brand = None
+    sort = None
+    direction = None
+
+    if request.GET:
+
+        if 'brand' in request.GET:
+            brands = request.GET['brand'].split(',')
+            products = products.filter(brand__name__in=brands)
+            brands = Brand.objects.filter(name__in=brands)
+            print("this is the brand products", brands)
+
+    current_sorting = f'{sort}_{direction}'
+
+    context = {
+        'brands': brands,
+        'products': products,
+        'current_sorting': current_sorting,
+    }
+
+    return render(request, 'products/one_brand.html', context)
 
 
 @login_required

@@ -12,7 +12,7 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col text-center my-3">
             <h2 class="logo-font">Brands</h2>
             <hr class="w-50 mb-1">
         </div>
@@ -23,10 +23,10 @@
                 {% for brand in brands %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-1" style="width: 15rem;">
-                        <a href="{% url 'products' %}?brand={{ product.brand.name }}">
+                        <a href="{% url 'one_brand' %}?brand={{ brand.name }}">
                             <div class="card-img-top brand-img shadow">
                                 {% if brand.brand_image %}
-                                <img class="card-img-top img-fluid" src="{{ brand.brand_image.url }}"
+                                <img class="card-img-top img-fluid" src="{{ Brand.brand_image.url }}"
                                     alt="{{ brand.name }}">
                                 {% else %}
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}test.png"
@@ -36,6 +36,7 @@
                         </a>
                     </div>
                 </div>
+                
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
