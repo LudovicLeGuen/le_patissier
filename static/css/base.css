@@ -101,6 +101,12 @@ body {
     }
 }
 
+@media (max-width: 340px) {
+    .fa-envelope {
+        display: none !important;
+    }
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -231,8 +237,14 @@ body {
 }
 
 /* Detail page*/
-.brand-detail {
-    padding: 5px 0px;
+.brand-detail a{
+    color: #6c757d !important;
+    letter-spacing: 0.1rem;
+} 
+
+.brand-detail a:hover{
+    color: #6c757d !important;
+    text-decoration-line: underline;
 }
 
 .detail-discount-banner {

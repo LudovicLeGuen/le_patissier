@@ -70,7 +70,7 @@
                             <p class="mb-0 text-center font-weight-bold">{{ product.name }}</p>
                         </div>
                         <div class="card-body pb-0">
-                            <p class="mb-0 text-center"><a href="{% url 'products' %}?brand={{ product.brand.name }}">{{ product.brand.friendly_name }}</a></p>
+                            <p class="brand-detail mb-0 text-center"><a href="{% url 'products' %}?brand={{ product.brand.name }}">{{ product.brand.friendly_name }}</a></p>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             {% if product.discount != 0 %}
@@ -91,7 +91,7 @@
                             {% endif %}
                             <div class="price-row">
                                 {% if product.rating %}
-                                <small class="text-muted text-center"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                <small class="text-muted text-center"><i class="fas fa-star mr-1" style="color: #ffd700"></i>{{ product.rating }} /
                                     5</small>
                                 {% else %}
                                 <small class="text-muted text-center">No Rating</small>
