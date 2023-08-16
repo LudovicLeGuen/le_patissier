@@ -12,6 +12,7 @@ def all_products(request):
     """ This view shows all products, sorts and searches """
 
     products = Product.objects.all()
+    discount = 0
     query = None
     categories = None
     brands = None
@@ -27,6 +28,8 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
+            if sortkey == 'discount':
+                products = products.filter(discount__gt=0)
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -113,28 +116,34 @@ def all_brands(request):
     """ This view shows all the brands """
 
     brands = Brand.objects.all()
-    print("all brands =", brands)
-       brand = None
-    sort = None
-    direction = None
+
+    context = {
+        'brands': brands,
+    }
+
+    return render(request, 'products/all_brands.html', context)
+
+
+def one_brand(request):
+    """ This view shows all products of 1 brand """
+
+    brands = Brand.objects.all()
+    products = Product.objects.all()
+    brand = None
 
     if request.GET:
 
         if 'brand' in request.GET:
             brands = request.GET['brand'].split(',')
-            print("this is the mark", brand)
             products = products.filter(brand__name__in=brands)
             brands = Brand.objects.filter(name__in=brands)
-
-    current_sorting = f'{sort}_{direction}'
 
     context = {
         'brands': brands,
         'products': products,
-        'current_sorting': current_sorting,
     }
 
-    return render(request, 'products/all_brands.html', context)
+    return render(request, 'products/one_brand.html', context)
 
 
 @login_required
