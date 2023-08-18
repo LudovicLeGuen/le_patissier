@@ -11,17 +11,15 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+    <div class="row mx-3 d-flex justify-content-center">
+        <div class="col-12  col-lg-4 ">
             <div class="image-container my-5">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="">
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                </a>
                 {% endif %}
             </div>
         </div>
@@ -30,7 +28,7 @@
                 <p class="mb-0 font-weight-bold text-uppercase">{{ product.name }}
                     <hr>
                 </p>
-                <p class="brand-detail text-uppercase link-secondary"><a href="{% url 'products' %}?brand={{ product.brand.name }}">
+                <p class="brand-detail link-secondary"><a href="{% url 'products' %}?brand={{ product.brand.name }}">
                         {{ product.brand.friendly_name }}</a>
                     <hr>
                 </p>
@@ -61,7 +59,10 @@
                 {% else %}
                 <p class="mb-0 detail-price">{{ product.price }} €</p>
                 {% endif %}
-                <p class="mt-3">{{ product.description }}</p>
+                <div class="bg-light">
+                    <h6 class="text-decoration-underline">Description</h6>
+                    <p class="mt-3">{{ product.description }}</p>
+                </div>
                 <p class="mb-0"><i class="fa-regular fa-circle-check fa-lg" style='color: green'></i> In stock</p>
                 <div class="my-3">
                     {% if request.user.is_superuser %}
@@ -123,7 +124,7 @@
             <h3> Reviews </h3>
         </div>
     </div>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center my-3">
         {% if request.user.is_authenticated %}
         <form method="post" action=".">
             {% csrf_token %}
@@ -131,39 +132,41 @@
                      
             {{ field | as_crispy_field }}
 
-            {% endfor %}
+            {% endfor %}            
             <div>
-                <label>Rating</label>
-                <select name="rating">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3" selected>3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <textarea name="body" cols="30" rows="4" placeholder="Leave a comment..."></textarea>
             </div>
-            <div>
-                <label>Comment</label>
-                <textarea name="body" cols="30" rows="4"></textarea>
-            </div>
-            <div>
-                <button>Submit</button>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <label>Rating</label>
+                    <select name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
             </div>
         </form>
         {% else %}
-            <div class="my-5">
+            <div class="my-5 d-flex flex-column text-center ">
                 <h4>Log in to post a review</h4>
+                <p><a class="btn btn-outline-secondary mt-1" href="{% url 'account_login' %}">Login</a></p>
             </div>
         {% endif %}
     </div>
-    <div class="row d-flex justify-content-center flex-column m-auto my-5"></div>
+    <div class="row d-flex justify-content-center flex-column m-auto my-3"></div>
         {% for review in product.reviews.all %}
             {% if review.approved == True %}
-                <div class="w-75 m-auto text-center">
+                <div class="w-75 m-auto text-center">   
+                    <hr>
                     <p><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ review.rating}} / 5  | <strong>{{ product.name}} - {{ product.brand.friendly_name }}</strong></p>
                     <p class="lead">{{ review.body }}</p>
-                    <p class="text-mted">{{ review.created_by }} | {{ review.created_on|date:"d-M-Y" }} | Verified Purchase</p>
-                    <hr>
+                    <p class="text-mted">{{ review.created_by }} | {{ review.created_on|date:"d-M-Y" }} | Verified Purchase</p>                 
                 </div>
             {% endif %}
     </div>

@@ -240,6 +240,7 @@ body {
 .brand-detail a{
     color: #6c757d !important;
     letter-spacing: 0.1rem;
+    text-transform: uppercase;
 } 
 
 .brand-detail a:hover{
