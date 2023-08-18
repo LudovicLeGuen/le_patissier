@@ -142,6 +142,7 @@
     {% endblock %}
             
 <!-- Footer based on https://mdbootstrap.com/-->
+<div class="footer">
 <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center p-4 mt-5 border-bottom">
@@ -173,6 +174,9 @@
             </p>
             <p>
                 <i class="fas fa-phone me-3"></i> + 33 12 345 678
+            </p>
+            <p>
+                <i class="fa-solid fa-at"></i> <a href="{% url 'contact' %}">Contact us</a> 
             </p>
             </div>
           <!-- Grid column -->
@@ -257,7 +261,7 @@
         <i class="fa-brands fa-square-github"></i>
       </a>
     </div>
-  </footer>
+  </footer></div>
   <!-- Footer -->
 
     {% block postloadjs %}
