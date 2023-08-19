@@ -7,4 +7,14 @@ assignees: LudovicLeGuen
 
 ---
 
-As an **Admin** I need **something** in order to **do something**
+As a **Someone** I need **something** in order to **do something**
+
+## ACCEPTANCE CRITERIAS:
+- [x] criteria 1
+- [x] criteria 2
+
+## TASKS:
+- [x] task 1
+- [x] task 2
+- [x] task 3
+- [x] task 4
