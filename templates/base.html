@@ -54,7 +54,7 @@
                     <div class="input-group w-100 search">
                         <input class="form-control" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control" type="submit">
+                            <button class="form-control" type="submit" name="search">
                                 <span class="icon">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </span>
@@ -143,7 +143,7 @@
             
 <!-- Footer based on https://mdbootstrap.com/-->
 <div class="footer">
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start bg-light ">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center p-4 mt-5 border-bottom">
       <div class="me-5 ">
@@ -176,7 +176,7 @@
                 <i class="fas fa-phone me-3"></i> + 33 12 345 678
             </p>
             <p>
-                <i class="fa-solid fa-at"></i> <a href="{% url 'contact' %}">Contact us</a> 
+                <i class="fa-solid fa-at"></i> <a href="{% url 'contact' %}" class="text-reset">Contact us</a> 
             </p>
             </div>
           <!-- Grid column -->

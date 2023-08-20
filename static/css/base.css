@@ -200,6 +200,15 @@ body {
     border-width: 5px;
 }
 
+#button-hero a{
+    width: 100%;
+}
+
+#button-hero a:hover{
+    background-color: #000;
+    color: white;
+}
+
 .why-box {
     background-color: #A47E67;
     padding: 20px;
