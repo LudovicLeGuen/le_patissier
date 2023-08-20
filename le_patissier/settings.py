@@ -30,8 +30,6 @@ DEBUG = True  # 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['le-patissier-b2d63743796c.herokuapp.com',
                  '8000-ludovicleguen-le-patissi-t4bzefwvs1.us2.codeanyapp.com',
-                 '8001-ludovicleguen-le-patissi-t4bzefwvs1.us2.codeanyapp.com',
-                 '8001-ludovicleguen-le-patissi-t4bzefwvs1.us2.codeanyapp.com'
                  ]
 
 
