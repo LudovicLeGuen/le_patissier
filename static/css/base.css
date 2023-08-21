@@ -118,13 +118,20 @@ body {
 }
 
 @media (max-width: 520px) {
-    #title-hero h1 {
+    #title-hero h1 {        
         font-size: 175% !important;
+
     }
 
     #button-hero {
+        width: 50%;
         position: absolute;
-        bottom: 0px !important;
+        bottom: 20px !important;
+    }
+
+    #button-hero h2{
+        font-size: 75%;
+
     }
 }
 
@@ -229,12 +236,13 @@ body {
 
 #title-hero {
     position: absolute;
-    top: 50px;   
+    top: 50px;
     background: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 #title-hero h1 {
-    font-size: 500% ;
+    font-size: 500%;
     text-transform: uppercase;
     color: white;
 }
