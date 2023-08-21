@@ -1,18 +1,12 @@
 # le-patissier
 
-My Foody Book is a full stack web application where users can create and store their recipes and also collect other users one. 
+Welcome to le Patissier. This website constitutes the 5th and last portfolio project of Code Institute in order to be graduated from their Academy. This project uses Django, Javascript (jQuery), Python, CSS3, Bootstap and obviously HTML5 in ordee to build this eCommerce application. 
+This website is a B2C platform allowing users to purchase professional pastry tools. <br>
+Le patissier is built on products lists, browsable categories, product details, shopping basket and payments. On top of it, the site owners inntend to create a strong marketing campaign based on Facebook and Youtube.  
 
-The purpose of the site is to offer a convenient platform to store recipes and also be inspired by others. 
+![Le Patissier on devices](assets/readme-files/wheel-of-fortune.PNG)
 
-The audience is simple: Food lovers of all ages who love sharing and showing what they can do in a kitchen. 
-
-The Website is based on CRUD fucntionnality and allow users to create, read, update and delete their own recipes (except for admins). User can also collect and discard others users recipes. Finally, users can create and update their profiles.
-
-My Foody Book also provides an administration exclusively accessible by admins that can manage comments and moderate the platform.
-
-![My Foody Book on devices](assets/readme-files/wheel-of-fortune.PNG)
-
-[Click here to access live project](/)
+[Click here to access live project](https://le-patissier-b2d63743796c.herokuapp.com/)
 ## Table of contents
 1. [Introduction](#Introduction)
 2. [UX](#UX)

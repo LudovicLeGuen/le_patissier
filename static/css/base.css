@@ -111,9 +111,21 @@ body {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 725px) {
+    #title-hero h1 {
+        font-size: 300% !important;
+    }
+}
+
+@media (max-width: 520px) {
+    #title-hero h1 {
+        font-size: 175% !important;
+    }
+
     #button-hero {
-        position: static;
+        position: absolute;
+        bottom: 0px !important;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -177,6 +189,7 @@ body {
     .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
 }
 
 /* Index page */
@@ -215,18 +228,15 @@ body {
 }
 
 #title-hero {
-    width: 100%;
-    height: 20%;
     position: absolute;
-    top: 50px;
-    font-size: 400%;
-    font-weight: 300%;
+    top: 50px;   
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #title-hero h1 {
+    font-size: 500% ;
     text-transform: uppercase;
     color: white;
-    -webkit-text-stroke: 0.3px black;
 }
 
 .why-box {
