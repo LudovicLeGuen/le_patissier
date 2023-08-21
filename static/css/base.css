@@ -120,7 +120,6 @@ body {
 @media (max-width: 520px) {
     #title-hero h1 {        
         font-size: 175% !important;
-
     }
 
     #button-hero {
@@ -131,7 +130,10 @@ body {
 
     #button-hero h2{
         font-size: 75%;
+    }
 
+    .why-box {
+        border-width: 50px;
     }
 }
 
