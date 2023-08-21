@@ -30,5 +30,4 @@ urlpatterns = [
     path('marketing/', include('marketing.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'pe_patissier.views.handler404'
-
+handler404 = 'le_patissier.views.handler404'
