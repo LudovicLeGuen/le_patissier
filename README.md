@@ -54,42 +54,43 @@ The minimum requirements of this project are:
 ## UX
 ### Ideal User Demographic
 The users targeted have to enjoy baking and most of all have to be serious about it.
-The website is built for 2 types of users
-Buyers who want quality products and intend to spend on reviewed products.
-People coming from the Social media 
+The website is built for 3 types of users:
+* First time user who want to see what products we have and at what price
+* Recurrent Buyers
+* The site admins
 
 ### User-Stories
-#### Frequent User Goals
-* Frequent users want to see the recipes they have created and collected
-* Frequent users want to log in with their usual credentials
-* Frequent users want to see other users recipes
-* Frequent users want to manage their FoodyBook
+#### Recurrent Buyer Goals
+* Log in and see their profile
+* Find their favorites products
+* Browse the catalog and find the correct products
+* Save their info to speed payments process
 
 #### New User Goals
-* New Users want to be able to see some of the content before registering
-* New users want to understand what the site is about within seconds
-* New users want to understand the functionalities quickly.
+* New Users need to understand the site easily
+* New Users need to browse content quickly
+* New Users want to experience the site 
+* new Users want to feel secure to make a first purchase
 
 #### Site Administrators
-* The admnistrators needs to control all aspects of the site
-* The admins can remove users
+* The admnins need to control all aspects of the site
 * The admins need to moderate comments
-* The admon needs to navigate between the site and admin easily.
+* The admin need to create edit and delete products, categories, and brands
+* The admin need to navigate between the site and admin easily.
 
 #### Development Methodology
-* The development followed an Agile methodology on the [Foody Book github Project](https://github.com/users/LudovicLeGuen/projects/4 "Link to the Foody Book github Project")
+* The development followed an Agile methodology on the [le Patissier github Project](https://github.com/users/LudovicLeGuen/projects/6 "Link to Le Patissier github Project")
 
 <details>
 <summary>![Github project](assets/readme-files/images/project.png)</summary>
-![Github project](assets/readme-files/images/project.png)
+![Github project](documentation/methodology/agile.PNG)
 </details> 
 
 * All project database was base on the following Database Shema.
 
 <details>
 <summary>![Database Schema](assets/readme-files/images/project.png)</summary>
-* All project database was base on the following Database Shema.
-![Database Schema](assets/readme-files/images/myFoodyBook.png)
+![Database Schema](documentation/methodology/le-patissier-db-schema.png)
 
 [Back to top ⇧](#le-patissier)
 
@@ -177,8 +178,8 @@ Now that we have established the goals of the website we can deduce the necessar
 The website will consist of 12 pages. 
 
    1. **A Home page** with the purpose of the site for first users and the recipe content or the logged in users.     
-   2. **A Foodybook page** with your created and collected recipes.
-   3. **A Register page** to register on the site.
+   2. **An all products page** with all products
+   3. **A product detail page** to register on the site.
    4. **A Log in page** to log in with your credentials.
    5. **A log out page** to confirm if users want to leave.
    6. **A profile page** to show your Bio and your recipe too.This will act as the user foodybook
@@ -200,28 +201,21 @@ With the structure above the designer has created the following wireframes on [B
 <details>
 <summary>Home Page</summary>
     
-![Homepage](assets/documentation/wireframes/landing-page.png)
+![Homepage](documentation/wireframes/landing-page.png)
 
 </details> 
 
 <details>
 <summary>All products page</summary>
     
-![Homepage](assets/documentation/wireframes/product-page.png)
+![Homepage](documentation/wireframes/product-page.png)
 
 </details> 
 
 <details>
 <summary>Product Details</summary>
     
-![Landing-Page](assets/documentation/wireframes/product-details.png)
-
-</details> 
-
-<details>
-<summary>My Foody Book page no recipe</summary>
-    
-![L](assets/readme-files/images/wireframes/Home-My-Foody-book-no-recipe.png)
+![Landing-Page](documentation/wireframes/product-details.png)
 
 </details> 
 
@@ -234,7 +228,7 @@ The color scheme used was kept as simple as possible with the use of Bootstrap c
 In fact the color scheme is derived from the landing page image.
 <details>
 <summary>Palette</summary>
-![Foody-book](assets/documentation/palette/palette-patissier.png)
+![Foody-book](documentation/palette/palette-patissier.png)
 </details>
 
 Favicon
@@ -260,118 +254,118 @@ The images used on the website are sourced from various websites which are liste
 #### Navbar
 
 * The logged in navbar
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * The logged out navbar
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * The profile navbar
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * The admin navbar
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * The small device navbar
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * The expanded navbar
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 
 #### Landing Page
 
 * Landing Page 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Footer company section
 
 * Footer company section 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Footer Legal Section
 
 * Footer Legal Section 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Footer Brands links
 
 * Footer Brands links 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Footer Social links
 
 *  Footer Social links 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Newsletter 
 
 * Newsletter 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Why Us? Section
 
 * Why Us? Section 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Search field
 
 * Search field 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Categories Section
 
 * Categories Section 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Sort section
 
 * Sort section 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### All products page
 
 * Product Card
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Product details page
 
 * Product Brand link
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * Product Description
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * Product Price
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 * The comment section in the product section
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 
 #### All brands page
 
 * All brands page
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### My Basket Page
 
 * My Basket Page 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Checkout Page
 
 * Checkout Page 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Basket Snippet
 
 * Basket snippet 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 #### Message box
 
 * Message box 
-![Le Patiissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/)
 
 [Back to top ⇧](#le-patissier)
 
@@ -379,6 +373,7 @@ The images used on the website are sourced from various websites which are liste
 
 The website would need the following features in the feature:
 * A wishlist
+* A favorite products page
 * More categories such as ingredients
 * A recipe section
 * More pictures for each products
