@@ -2,7 +2,8 @@
 
 Welcome to le Patissier. This website constitutes the 5th and last portfolio project of Code Institute in order to be graduated from their Academy. This project uses Django, Javascript (jQuery), Python, CSS3, Bootstap and obviously HTML5 in ordee to build this eCommerce application. 
 This website is a B2C platform allowing users to purchase professional pastry tools. <br>
-Le patissier is built on products lists, browsable categories, product details, shopping basket and payments. On top of it, the site owners inntend to create a strong marketing campaign based on Facebook and Youtube.  
+Le patissier is built on products lists, browsable categories, product details, shopping basket and payments. <br>
+On top of it, the site owners inntend to create a strong marketing campaign based on Facebook and Youtube.  
 
 ![Le Patissier on devices](assets/readme-files/wheel-of-fortune.PNG)
 
@@ -33,25 +34,29 @@ Le patissier is built on products lists, browsable categories, product details, 
 ***
 
 ## Introduction
-My Foody Book is the 4th project for Code Institute's full stack development degree.
+Le Patissier is the 5th and last project for Code Institute's full stack development degree.
 The minimum requirements of this project are:
-* Use an Agile methodology to plan and design a Full-Stack Web application using an MVC framework and related contemporary technologies.
-* Implement a data model, application features and business logic to manage, query and manipulate data to meet given needs in a particular real-world domain.
-* Identify and apply authorisation, authentication and permission features in a Full-Stack web application solution.
-* Create manual and/or automated tests for a Full-Stack Web application using an MVC framework and related contemporary technologies
-* Use a distributed version control system and a repository hosting service to document, develop and maintain a Full-Stack Web application using an MVC framework and related contemporary technologies.
-* Deploy a Full-Stack Web application using an MVC framework and related contemporary technologies to a cloud-based platform
-* Understand and use object-based software concepts
-
+* Building an E-commerce platform
+* Use of Search Engine Optimization on the website
+* Insert Web Marketing strategies
+* Insert a robot.txt file
+* Insert a sitemap.xml
+* Descriptive metatags
+* Creating a Facebook page
+* Incorporating a newsletter
+* Providing a business model
+* Have at least 3 original models
+* Implement a custom 404 page
+* Show and use an agile methodlogy throughout the project
 
 [Back to top ⇧](#le-patissier)
 
 ## UX
 ### Ideal User Demographic
-The users targeted have to be food lovers who enjoy sharing their ideas and creativity. 
-There will be 2 main category users
-Frequent food aficionados who love creating and sharing and want to store there recipes.
-New users who simply want to be inspired.
+The users targeted have to enjoy baking and most of all have to be serious about it.
+The website is built for 2 types of users
+Buyers who want quality products and intend to spend on reviewed products.
+People coming from the Social media 
 
 ### User-Stories
 #### Frequent User Goals
@@ -186,7 +191,7 @@ The website will consist of 12 pages.
 
 With the needed structure defined the developper has created the following Wireframes.
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 ### Skeleton
 
@@ -195,67 +200,41 @@ With the structure above the designer has created the following wireframes on [B
 <details>
 <summary>Home Page</summary>
     
-![Homepage](assets/readme-files/images/wireframes/home-my-foody-book.png)
+![Homepage](assets/documentation/wireframes/landing-page.png)
 
 </details> 
 
 <details>
-<summary>All recipe page</summary>
+<summary>All products page</summary>
     
-![Homepage](assets/readme-files/images/wireframes/all-recipe.png)
+![Homepage](assets/documentation/wireframes/product-page.png)
 
 </details> 
 
 <details>
-<summary>Landing page</summary>
+<summary>Product Details</summary>
     
-![Landing-Page](assets/readme-files/images/wireframes/landing-page.png)
-
-</details> 
-
-<details>
-<summary>Profile page</summary>
-    
-![Profile](assets/readme-files/images/wireframes/profile-page.png)
-
-</details> 
-
-<details>
-<summary>Login</summary>
-    
-![Login](assets/readme-files/images/wireframes/login.png)
-
-</details> 
-<details>
-<summary>Register page</summary>
-    
-![Register](assets/readme-files/images/wireframes/register-page.png)
-
-</details> 
-
-<details>
-<summary>My Foody Book page</summary>
-    
-![Foody-book](assets/readme-files/images/wireframes/my-foody-book-page.png)
+![Landing-Page](assets/documentation/wireframes/product-details.png)
 
 </details> 
 
 <details>
 <summary>My Foody Book page no recipe</summary>
     
-![Foody-book](assets/readme-files/images/wireframes/Home-My-Foody-book-no-recipe.png)
+![L](assets/readme-files/images/wireframes/Home-My-Foody-book-no-recipe.png)
 
 </details> 
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 ### Design
 #### Colour Scheme
 
-The color scheme used was kept as simple as possible with the use of the Bootstrap colors.
+The color scheme used was kept as simple as possible with the use of Bootstrap colors.
+In fact the color scheme is derived from the landing page image.
 <details>
 <summary>Palette</summary>
-![Foody-book](assets/readme-files/images/palette.png)
+![Foody-book](assets/documentation/palette/palette-patissier.png)
 </details>
 
 Favicon
@@ -272,7 +251,7 @@ The developper has chosen Roboto from [Google Fonts](https://fonts.google.com/).
 #### Imagery
 The images used on the website are sourced from various websites which are listed in the [Credits section](##Credits) of this README.
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 
 ## Features
@@ -281,91 +260,132 @@ The images used on the website are sourced from various websites which are liste
 #### Navbar
 
 * The logged in navbar
-![Foody-book](assets/readme-files/images/navbar/navbar.PNG)
+![Le Patiissier](assets/documentation/features/)
 
 * The logged out navbar
-![Foody-book](assets/readme-files/images/navbar/navbar_loggedout.PNG)
+![Le Patiissier](assets/documentation/features/)
+
+* The profile navbar
+![Le Patiissier](assets/documentation/features/)
 
 * The admin navbar
-![Foody-book](assets/readme-files/images/navbar/admin_navbar.PNG)
+![Le Patiissier](assets/documentation/features/)
 
 * The small device navbar
-![Foody-book](assets/readme-files/images/navbar/burger_navbar.PNG)
+![Le Patiissier](assets/documentation/features/)
 
 * The expanded navbar
-![Foody-book](assets/readme-files/images/navbar/expanded_navbar.PNG)
+![Le Patiissier](assets/documentation/features/)
 
 
-#### Foody Book Page
+#### Landing Page
 
-* The Foody Book action menu 
-![Foody-book](assets/readme-files/images/action_menu.PNG)
+* Landing Page 
+![Le Patiissier](assets/documentation/features/)
 
-#### Recipe
+#### Footer company section
 
-* The create recipe button in the navbar
-![Foody-book](assets/readme-files/images/create_recipe.PNG)
+* Footer company section 
+![Le Patiissier](assets/documentation/features/)
 
-* The edit recipe menu
-![Foody-book](assets/readme-files/images/edit_recipe.PNG)
+#### Footer Legal Section
 
-* The recipe view
-![Foody-book](assets/readme-files/images/recipe_details.PNG)
+* Footer Legal Section 
+![Le Patiissier](assets/documentation/features/)
 
-* The Edit recipe view
-![Foody-book](assets/readme-files/images/edit_recipe.PNG)
+#### Footer Brands links
 
-* The comment section in the recipe
-![Foody-book](assets/readme-files/images/comment_section.PNG)
+* Footer Brands links 
+![Le Patiissier](assets/documentation/features/)
 
-* The collect button
-![Foody-book](assets/readme-files/images/collect_button.PNG)
+#### Footer Social links
 
-* The collect tag when recipe is collected
-![Foody-book](assets/readme-files/images/collected tag.PNG)
+*  Footer Social links 
+![Le Patiissier](assets/documentation/features/)
 
-* The collect tag when recipe is not collected
-![Foody-book](assets/readme-files/images/collection-tag.PNG)
+#### Newsletter 
 
-* The discard recipe button
-![Foody-book](assets/readme-files/images/discard_button.PNG)
+* Newsletter 
+![Le Patiissier](assets/documentation/features/)
+
+#### Why Us? Section
+
+* Why Us? Section 
+![Le Patiissier](assets/documentation/features/)
+
+#### Search field
+
+* Search field 
+![Le Patiissier](assets/documentation/features/)
+
+#### Categories Section
+
+* Categories Section 
+![Le Patiissier](assets/documentation/features/)
+
+#### Sort section
+
+* Sort section 
+![Le Patiissier](assets/documentation/features/)
+
+#### All products page
+
+* Product Card
+![Le Patiissier](assets/documentation/features/)
+
+#### Product details page
+
+* Product Brand link
+![Le Patiissier](assets/documentation/features/)
+
+* Product Description
+![Le Patiissier](assets/documentation/features/)
+
+* Product Price
+![Le Patiissier](assets/documentation/features/)
+
+* The comment section in the product section
+![Le Patiissier](assets/documentation/features/)
 
 
-#### Profile
+#### All brands page
 
-* Profile 
-![Foody-book](assets/readme-files/images/foodybooker_profile.png)
+* All brands page
+![Le Patiissier](assets/documentation/features/)
 
-* All Profile 
-![Foody-book](assets/readme-files/images/foodybookers.PNG)
+#### My Basket Page
 
-* Profile with no recipe
-![Foody-book](assets/readme-files/images/profile_no_recipe.png)
+* My Basket Page 
+![Le Patiissier](assets/documentation/features/)
 
+#### Checkout Page
 
-#### Confirmation
+* Checkout Page 
+![Le Patiissier](assets/documentation/features/)
 
-* Log out confirmation 
-![Foody-book](assets/readme-files/images/logout_confirmation.png)
+#### Basket Snippet
 
-* Delete recipe confirmation 
-![Foody-book](assets/readme-files/images/delete_recipe.png)
+* Basket snippet 
+![Le Patiissier](assets/documentation/features/)
 
+#### Message box
 
-[Back to top ⇧](#My-foody-book)
+* Message box 
+![Le Patiissier](assets/documentation/features/)
+
+[Back to top ⇧](#le-patissier)
 
 ### Features to Implement in the future
 
 The website would need the following features in the feature:
-* Search  
-* Categories for the recipes 
-* Allergens 
-* Latest Recipe view 
-* Most collected view 
-* Top profiles 
+* A wishlist
+* More categories such as ingredients
+* A recipe section
+* More pictures for each products
+* A coupon system
 
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 ## Issues and Bugs 
 The development of the site was a continuous chain of bug and issues. The recording of those issues would probably be longer than the actual development (which took foerver BTW). 
@@ -400,7 +420,7 @@ As such, only the Users page redirects to the correct foodybooker.
 The authors avatars on each recipe card are actually bugged. They all redirect to the logged in user. 
 
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 ## Technologies Used
 ### Main Languages Used
@@ -411,6 +431,7 @@ The authors avatars on each recipe card are actually bugged. They all redirect t
 
 ### Framework
 * Django
+* Bootstrap
 
 ### Sofwares
 * [Heroku](https://heroku.com/ "Link to Heroku") was used to deploy the website.
@@ -424,6 +445,7 @@ The authors avatars on each recipe card are actually bugged. They all redirect t
 * [Google-Fonts](https://fonts.google.com/ "Link to google font") was used to get the Roboto font.
 * [Google-dev-tools](https://heroku.com/ "Link to google dev tools") was used to test, develop and debug thes site on the fly.
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/ "Link to Lighthouse") was used to test performances and compliance.
+* [Coolors](https://coolors.co/ "Link to Coolors") was used to create a palette based on the landing page picture.
 
 ### Libraries
 * django.contrib.admin
@@ -444,13 +466,13 @@ The authors avatars on each recipe card are actually bugged. They all redirect t
 * publish',
 * users',
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 ## Testing
 Refer to this [page](TESTING.md) please
 
 ## Deployment
-The site was developped on Gitpod and Codeanywhere, commiting and pushing to github.
+The site was developped on Codeanywhere, commiting and pushing to github.
 
 ### Deploying on Heroku
 Deploying on Heroky required the following:
@@ -479,19 +501,18 @@ Deploying on Heroky required the following:
    
 ## Credits 
 ### Code 
-The developer has consulted countless times Stack Overflow and W3Schools in ordeer to build the game.
+The developer has consulted countless times Stack Overflow and W3Schools in order to build the website.
 The development choices were HEAVILY inspired by [Viva la nacho](https://viva-la-nacho.herokuapp.com/ "Viva la nacho ") by Matthey Hurrell, a fellow Code Institute student.
 Also, The Code Institute "i Think Therefore I blog" course was a solid reference. 
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 ## Acknowledgements
 I would like to thank:
 * My wife Dominika for her patience, support and tests to help me do as much as I could between my 3 jobs. 
-* My mentor, Seun, for her counseling and help.
 * My fellow coding students of Code institue who have been invaluable on Slack.
-* And last but most definitely not the least.... TUTORING!!!!!! I would not have had a chance without them. I spent so much time thre that I believe i have had a chat with every sibgle on eof them.
+* And last but most definitely not the least.... TUTORING!!!!!! I would not have made it without them.
 
-[Back to top ⇧](#My-foody-book)
+[Back to top ⇧](#le-patissier)
 
 ***
