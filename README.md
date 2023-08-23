@@ -139,11 +139,10 @@ The website will focus on the following target audience
 
     
 * The Administrator has to receive these information:
-    * The name of the users
     * The profile of the users
     * The products
     * the Brands
-    * The Catgories
+    * The Categories
     * The review
     * the possibility to delete and manage all of the above
 
@@ -221,6 +220,13 @@ With the structure above the designer has created the following wireframes on [B
 <summary>Product Details</summary>
     
 ![Landing-Page](documentation/wireframes/product-details.png)
+
+</details> 
+
+<details>
+<summary>All Brands</summary>
+    
+![Landing-Page](documentation/wireframes/brands.png)
 
 </details> 
 
@@ -388,8 +394,7 @@ The website would need the following features in the feature:
 [Back to top ⇧](#le-patissier)
 
 ## Issues and Bugs 
-The development of the site was a continuous chain of bug and issues. The recording of those issues would probably be longer than the actual development (which took foerver BTW). 
-Issues were mainly writing errors that threw minors errors, or tiny mistakes in the HTML. Nevertheless, here are the main issues that the developper encountered.
+Apart from the classical small issues such as mispelling in the code or omission to add urls that threw usual errors, the developper encountered some puzzling issues.
 
 **The hero page would not stay centered**
 The developper has decided to use a single hero page for all the messages on the site. The page had to fully cover the page and have a singfle centered jumbotron contianing the message. 
