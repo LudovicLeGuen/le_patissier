@@ -5,7 +5,11 @@ html {
 body {
     height: calc(100vh - 170px);
     color: #060B06;
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4 , h5 , h6{
+    font-family: "Cormorant Garamond", sans-serif;
 }
 
 .footer {

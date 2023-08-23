@@ -15,7 +15,7 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'all_brands' %}" class="dropdown-item ">By Brand</a>
+                <a href="{% url 'all_brands' %}" class="dropdown-item ">All Brand</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -42,7 +42,6 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">                
                 <a href="{% url 'products' %}?category=mousse_frames" class="dropdown-item">Mousse Frames</a>
-                <a href="{% url 'products' %}?category=squares,rectangles" class="dropdown-item">Squares &amp; Rectangles</a>
                 <a href="{% url 'products' %}?category=tart_frames" class="dropdown-item">Tart Frames</a>
             </div>
         </li>
@@ -52,7 +51,6 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cake Molds</a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=brioche" class="dropdown-item">Brioche</a>
-                <a href="{% url 'products' %}?category=brownies" class="dropdown-item">Brownies</a>
                 <a href="{% url 'products' %}?category=cupcakes" class="dropdown-item">Cupcakes</a>           
             </div>
         </li>
