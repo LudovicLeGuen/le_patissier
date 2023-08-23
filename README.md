@@ -1,11 +1,11 @@
 # le-patissier
 
-Welcome to le Patissier. This website constitutes the 5th and last portfolio project of Code Institute in order to be graduated from their Academy. This project uses Django, Javascript (jQuery), Python, CSS3, Bootstap and obviously HTML5 in ordee to build this eCommerce application. 
+Welcome to le Patissier. This website constitutes the 5th and last portfolio project of Code Institute in order to be graduated from their Academy. This project uses Django, Javascript (jQuery), Python, CSS3, Bootstap and obviously HTML5 in order to build this eCommerce application. 
 This website is a B2C platform allowing users to purchase professional pastry tools. <br>
 Le patissier is built on products lists, browsable categories, product details, shopping basket and payments. <br>
 On top of it, the site owners inntend to create a strong marketing campaign based on Facebook and Youtube.  
 
-![Le Patissier on devices](assets/readme-files/wheel-of-fortune.PNG)
+![Le Patissier on devices](documentation/features/amiresponsive.PNG)
 
 [Click here to access live project](https://le-patissier-b2d63743796c.herokuapp.com/)
 ## Table of contents
@@ -82,14 +82,16 @@ The website is built for 3 types of users:
 * The development followed an Agile methodology on the [le Patissier github Project](https://github.com/users/LudovicLeGuen/projects/6 "Link to Le Patissier github Project")
 
 <details>
-<summary>![Github project](assets/readme-files/images/project.png)</summary>
+<summary>Agile board</summary>
+
 ![Github project](documentation/methodology/agile.PNG)
 </details> 
 
 * All project database was base on the following Database Shema.
 
 <details>
-<summary>![Database Schema](assets/readme-files/images/project.png)</summary>
+<summary>Database Schema</summary>
+
 ![Database Schema](documentation/methodology/le-patissier-db-schema.png)
 
 [Back to top ⇧](#le-patissier)
@@ -97,7 +99,7 @@ The website is built for 3 types of users:
 </details>
 ### Development-Planes
 
-The website has to answer the aforementioned needs of all users types and therefore must contain a a variety of CRUD finctionality for the recipes and a user profile management system. Furthrmoe, a simple yet intuitive collection method of recipe must be omplemented. Finally, an interactivity must be created trhough a comment section.
+The website has to answer the aforementioned needs of all users types and therefore must contain a variety of CRUD functionality for the products and a user profile management system. Furthermore, a simple yet intuitive payment system must be implemented. Users might also want to subscribe to see the new products. Finally, a review section is imperative.
 
 
 #### Strategy
@@ -105,43 +107,44 @@ The website will focus on the following target audience
 * Audience
     * New Users
     * Frequent users
-    * Food lovers with creativity
+    * Pastry enthusiasts
     * Curious people 
-    * Serious cooks with the need to store content.
     
 * Demographic
     * Adults 
     * Young adults
     * Independant adults
-    * Beginner cooks
+    * Professional chefs
     * Artistic and creative people
     
 * Psycho Characteristics
-    * Sociable
     * Epicurian
     * Curious
-    * Food knowledge
 
-* The Users must find thisinformation:
-    * The name of the recipe
-    * The time it takes to cook it
-    * The ingredients
-    * The number of people it feeds
-    * The steps to cook the dish
-    * A picture of the dish
-    * The number of people who collected it
-    * The author of the recipe
-    * The profile of the author
+* The Users must find this information:
+    * The name of the categories
+    * The name of the products
+    * The price of the products
+    * The Brand
+    * The picture of the product
+    * The review of the product
+    * All product by categories for comparaison
+    * A shopping basket
+    * Total to pay
     * The possibility to Log in Log out or register
-    * the possibility to post comments
-    * A view of the previous comments
+    * The possibility to post reviews
+    * The possibility to subscribe to a newsletter
+    * Clear validation of their actions
+    * The legal statements of the company
 
     
 * The Administrator has to receive these information:
     * The name of the users
     * The profile of the users
-    * The Recipes
-    * The comments
+    * The products
+    * the Brands
+    * The Catgories
+    * The review
     * the possibility to delete and manage all of the above
 
 [Back to top ⇧](#le-patissier)
@@ -151,8 +154,10 @@ The website will focus on the following target audience
 Now that we have established the goals of the website we can deduce the necessary features and content:
 * Required Content
     * A quick description of the purpose of the site
-    * Recipes by users 
+    * A full product information card 
     * Users profile
+    * Legal neceesities
+    * Payment information
 
 * Required functionality
     * A form to register
