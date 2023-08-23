@@ -265,118 +265,119 @@ The images used on the website are sourced from various websites which are liste
 #### Navbar
 
 * The logged in navbar
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/the-logged-in-navbar)
 
 * The logged out navbar
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/the-logged-out-navbar)
 
 * The profile navbar
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/the-profile-navbar)
 
 * The admin navbar
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/the-admin-navbar)
 
 * The small device navbar
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/the-small-device-navbar)
 
 * The expanded navbar
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/the-expanded-navbar)
 
 
 #### Landing Page
 
 * Landing Page 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/landing-page)
 
 #### Footer company section
 
 * Footer company section 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/footer-company-section)
 
 #### Footer Legal Section
 
 * Footer Legal Section 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/footer-legal-section)
 
 #### Footer Brands links
 
 * Footer Brands links 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/footer-brands-links)
 
 #### Footer Social links
 
 *  Footer Social links 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/footer-brands-links)
 
 #### Newsletter 
 
 * Newsletter 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/newsletter-1)
+![Le Patissier](assets/documentation/features/newsletter-2)
 
 #### Why Us? Section
 
 * Why Us? Section 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/why-us-section)
 
 #### Search field
 
 * Search field 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/search-field)
 
 #### Categories Section
 
 * Categories Section 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/categories-section)
 
 #### Sort section
 
 * Sort section 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/sort-section)
 
 #### All products page
 
 * Product Card
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/product-card)
 
 #### Product details page
 
 * Product Brand link
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/product-brand-link)
 
 * Product Description
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/product-description)
 
 * Product Price
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/product-price)
 
 * The comment section in the product section
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/comment-section)
 
 
 #### All brands page
 
 * All brands page
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/all-brands-page)
 
 #### My Basket Page
 
 * My Basket Page 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/my-basket-page)
 
 #### Checkout Page
 
 * Checkout Page 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/checkout-page)
 
 #### Basket Snippet
 
 * Basket snippet 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/basket-snippet)
 
 #### Message box
 
 * Message box 
-![Le Patissier](assets/documentation/features/)
+![Le Patissier](assets/documentation/features/message-box)
 
 [Back to top ⇧](#le-patissier)
 
@@ -396,33 +397,22 @@ The website would need the following features in the feature:
 ## Issues and Bugs 
 Apart from the classical small issues such as mispelling in the code or omission to add urls that threw usual errors, the developper encountered some puzzling issues.
 
-**The hero page would not stay centered**
-The developper has decided to use a single hero page for all the messages on the site. The page had to fully cover the page and have a singfle centered jumbotron contianing the message. 
-The Page has oftentimes been a challenge because of the placement of the div inthe HTML. Each HTML contains several if statements and having the jumbotron before, inside or outisde those statements made a differnce. 
+**Newsletter.html would not appear**
+The developper intended to include a newsletter from in the footer by using Django tags.
+Unfortunately, for a reason that the developper still ignores, the footer would not load with the tags in it. 
+The developper had to compromise and create a button to redirect the user to the rendered newsletter.html page
 
-**Bootstrap would not respond in certain pages**
-It took sometime for the developper to understand Bootstrap and apply it confidently. ine of the main issues the developper had was understanding the necessaity of the first row. This hard erned lesson cost him several trials and waste of time on debugging. 
+**Discrepancies bewteen IDE and Production**
+The developper realized that the production site would not laod the landing page picture properly after the deployment to heroku.
+It took the developpper several days and the help of tutors to understand that the project was build and deployed on 2 different databases. After connecting the correct database to the developement environment, the problem was gone.
 
-**Passing information between apps**
-The developper has decided to have two apps for the website: 
--publish
--users
-Passing information on template using the 2 apps has been particularly diificult for the developper. Several Tutoring intervention were necessary. So much so that the developement has not been completed and more work remains. The time management has been a real struggle for the deelopper. 
+**Showing all the brands and their products**
+The developper wanted to have a page with all Brands neatly represented and the possibility to click on any to show the related products. 
+The developper struggled to make it work. 
+The view did retrieve the correct data from the database, but the developper did not understand without the help of Tutoring that he needed to create anoth page in which to render the products according to the brand. 
 
 ### Unfixed Bugs 
 
-There are 3 bugs known to the developper.
-**The user avatar** 
-The logged in user avatar in the top right corner changes when a recipe author avatar on a recipe card is a placeholder. The bug is understood. Both user avatar and author avatar are ruled by the exact same if statement. If a placeholder is in the object image field, a default picture appears. 
-
-**Recipe duplicates** 
-When a user consults a foody booker profile, some recipes might be dupliacted. This is due to the number of times a r3ecipe has been collected. If the recipe is collected 2 times, the card appears twice. If the recipe is collected 3 times, it appears 3 times and so on. 
-The class based function filtering the query has been a challenge for the developper. Even though the developper went through tutoring for a fix, he could not find the solution. 
-
-**User profile redirection**
-The developper simply did not have time to incorporate a sound variable passing in each page through class based functions of the author recipe. 
-As such, only the Users page redirects to the correct foodybooker. 
-The authors avatars on each recipe card are actually bugged. They all redirect to the logged in user. 
 
 
 [Back to top ⇧](#le-patissier)
