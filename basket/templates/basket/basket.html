@@ -36,112 +36,112 @@
                     </div>
                 </div>
                 {% for item in basket_items %}
-                    <div class="row">
-                        <div class="col-12 col-sm-6 mb-2">
-                            {% include "basket/product-image.html" %}
-                        </div>
-                        <div class="col-12 col-sm-6 mb-2">
-                            {% include "basket/product-info.html" %}
-                        </div>
-                        <div class="col-12 col-sm-6 order-sm-last">
-                            <p class="my-0">Price Each: ${{ item.product.price }}</p>
-                            <p class="my-0">Discount Each: {{ item.product.discount }}%</p>
-                            
-                            <p><strong>Subtotal: </strong>
+                <div class="row">
+                    <div class="col-12 col-sm-6 mb-2">
+                        {% include "basket/product-image.html" %}
+                    </div>
+                    <div class="col-12 col-sm-6 mb-2">
+                        {% include "basket/product-info.html" %}
+                    </div>
+                    <div class="col-12 col-sm-6 order-sm-last">
+                        <p class="my-0">Price Each: ${{ item.product.price }}</p>
+                        <p class="my-0">Discount Each: {{ item.product.discount }}%</p>
+
+                        <p><strong>Subtotal: </strong>
+                            {% if item.product.discount == 0 %}
+                            {{ item.product.price | calc_subtotal:item.quantity }}€
+                            {% else %}
+                            {{ item.product.discounted_price | calc_discount_subtotal:item.quantity }}€
+                            {% endif %}
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        {% include "basket/quantity-form.html" %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+            <div class="table-responsive rounded d-none d-md-block">
+                <table class="table table-sm table-borderless">
+                    <thead class="text-black">
+                        <tr>
+                            <th scope="col">Product Info</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    {% for item in basket_items %}
+                    <tr>
+                        <td class="p-3 w-25">
+                            {% include 'basket/product-image.html' %}
+                        </td>
+                        <td class="py-3">
+                            {% include 'basket/product-info.html' %}
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">{{ item.product.price }}€</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">
                                 {% if item.product.discount == 0 %}
-                                    {{ item.product.price | calc_subtotal:item.quantity }}€
+                                No Discount
                                 {% else %}
-                                    {{ item.product.discounted_price | calc_discount_subtotal:item.quantity }}€
+                                {{ item.product.discount }}%</p>
+                            {% endif %}
+                        </td>
+                        <td class="py-3 w-25">
+
+                            {% include 'basket/quantity-form.html' %}
+
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">
+                                {% if item.product.discount == 0 %}
+                                {{ item.product.price | calc_subtotal:item.quantity }}€
+                                {% else %}
+                                {{ item.product.discounted_price | calc_discount_subtotal:item.quantity }}€
                                 {% endif %}
                             </p>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            {% include "basket/quantity-form.html" %}
-                        </div>
-                    </div>
-                    <div class="row"><div class="col"><hr></div></div>
-                {% endfor %}
-                <div class="btt-button shadow-sm rounded-0 border border-black">
-                    <a class="btt-link d-flex h-100">
-                        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-                    </a>	
-                </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td colspan="5" class="pt-5 text-right">
+                            {% include 'basket/basket-total.html' %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">
+
+                            {% include 'basket/checkout-buttons.html' %}
+
+                        </td>
+                    </tr>
+                </table>
             </div>
-                <div class="table-responsive rounded d-none d-md-block">
-                    <table class="table table-sm table-borderless">
-                        <thead class="text-black">
-                            <tr>
-                                <th scope="col">Product Info</th>
-                                <th scope="col"></th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Discount</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Subtotal</th>
-                            </tr>
-                        </thead>
-
-                        {% for item in basket_items %}
-                        <tr>
-                            <td class="p-3 w-25">
-                                {% include 'basket/product-image.html' %}
-                            </td>
-                            <td class="py-3">
-                                {% include 'basket/product-info.html' %}
-                            </td>
-                            <td class="py-3">
-                                <p class="my-0">{{ item.product.price }}€</p>
-                            </td>
-                            <td class="py-3">
-                                <p class="my-0">
-                                    {% if item.product.discount == 0 %}
-                                    No Discount
-                                    {% else %}
-                                    {{ item.product.discount }}%</p>
-                                {% endif %}
-                            </td>
-                            <td class="py-3 w-25">
-
-                                {% include 'basket/quantity-form.html' %}
-
-                            </td>
-                            <td class="py-3">
-                                <p class="my-0">
-                                    {% if item.product.discount == 0 %}
-                                    {{ item.product.price | calc_subtotal:item.quantity }}€
-                                    {% else %}
-                                    {{ item.product.discounted_price | calc_discount_subtotal:item.quantity }}€
-                                    {% endif %}
-                                </p>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                        <tr>
-                            <td colspan="5" class="pt-5 text-right">
-                                {% include 'basket/basket-total.html' %}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" class="text-right">
-
-                                {% include 'basket/checkout-buttons.html' %}
-
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            {% else %}
-            <p class="lead mb-5">Your basket is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Keep Shopping</span>
-            </a>
-            {% endif %}
         </div>
+
+        {% else %}
+        <p class="lead mb-5">Your basket is empty.</p>
+        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
+        </a>
+        {% endif %}
     </div>
+</div>
 </div>
 {% endblock %}
 

@@ -317,7 +317,7 @@ The images used on the website are sourced from various websites which are liste
 
 *  Footer Social links 
 
-![Le Patissier](documentation/footer-social-links.JPG)
+![Le Patissier](documentation/features/footer-social-links.JPG)
 
 #### Newsletter 
 
