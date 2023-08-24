@@ -239,14 +239,17 @@ The color scheme used was kept as simple as possible with the use of Bootstrap c
 In fact the color scheme is derived from the landing page image.
 <details>
 <summary>Palette</summary>
-![Foody-book](documentation/palette/palette-patissier.png)
+
+![Le Patissier](documentation/palette/palette-patissier.png)
+
 </details>
 
 Favicon
-
 <details>
 <summary>Favicon</summary>
-![Foody-book](assets/readme-files/images/favicon.png)
+
+![Le Patissier](assets/readme-files/images/favicon.png)
+
 </details>
  
 #### Typography
@@ -265,119 +268,119 @@ The images used on the website are sourced from various websites which are liste
 #### Navbar
 
 * The logged in navbar
-![Le Patissier](assets/documentation/features/the-logged-in-navbar)
+![Le Patissier](documentation/features/the-logged-in-navbar)
 
 * The logged out navbar
-![Le Patissier](assets/documentation/features/the-logged-out-navbar)
+![Le Patissier](documentation/features/the-logged-out-navbar)
 
 * The profile navbar
-![Le Patissier](assets/documentation/features/the-profile-navbar)
+![Le Patissier](documentation/features/the-profile-navbar)
 
 * The admin navbar
 ![Le Patissier](assets/documentation/features/the-admin-navbar)
 
 * The small device navbar
-![Le Patissier](assets/documentation/features/the-small-device-navbar)
+![Le Patissier](documentation/features/the-small-device-navbar)
 
 * The expanded navbar
-![Le Patissier](assets/documentation/features/the-expanded-navbar)
+![Le Patissier](documentation/features/the-expanded-navbar)
 
 
 #### Landing Page
 
 * Landing Page 
-![Le Patissier](assets/documentation/features/landing-page)
+![Le Patissier](documentation/features/landing-page)
 
 #### Footer company section
 
 * Footer company section 
-![Le Patissier](assets/documentation/features/footer-company-section)
+![Le Patissier](documentation/features/footer-company-section)
 
 #### Footer Legal Section
 
 * Footer Legal Section 
-![Le Patissier](assets/documentation/features/footer-legal-section)
+![Le Patissier](documentation/features/footer-legal-section)
 
 #### Footer Brands links
 
 * Footer Brands links 
-![Le Patissier](assets/documentation/features/footer-brands-links)
+![Le Patissier](documentation/features/footer-brands-links)
 
 #### Footer Social links
 
 *  Footer Social links 
-![Le Patissier](assets/documentation/footer-brands-links)
+![Le Patissier](documentation/footer-brands-links)
 
 #### Newsletter 
 
 * Newsletter 
-![Le Patissier](assets/documentation/features/newsletter-1)
-![Le Patissier](assets/documentation/features/newsletter-2)
+![Le Patissier](documentation/features/newsletter-1)
+![Le Patissier](documentation/features/newsletter-2)
 
 #### Why Us? Section
 
 * Why Us? Section 
-![Le Patissier](assets/documentation/features/why-us-section)
+![Le Patissier](documentation/features/why-us-section)
 
 #### Search field
 
 * Search field 
-![Le Patissier](assets/documentation/features/search-field)
+![Le Patissier](documentation/features/search-field)
 
 #### Categories Section
 
 * Categories Section 
-![Le Patissier](assets/documentation/features/categories-section)
+![Le Patissier](documentation/features/categories-section)
 
 #### Sort section
 
 * Sort section 
-![Le Patissier](assets/documentation/features/sort-section)
+![Le Patissier](documentation/features/sort-section)
 
 #### All products page
 
 * Product Card
-![Le Patissier](assets/documentation/features/product-card)
+![Le Patissier](documentation/features/product-card)
 
 #### Product details page
 
 * Product Brand link
-![Le Patissier](assets/documentation/features/product-brand-link)
+![Le Patissier](documentation/features/product-brand-link)
 
 * Product Description
-![Le Patissier](assets/documentation/features/product-description)
+![Le Patissier](documentation/features/product-description)
 
 * Product Price
-![Le Patissier](assets/documentation/features/product-price)
+![Le Patissier](documentation/features/product-price)
 
 * The comment section in the product section
-![Le Patissier](assets/documentation/features/comment-section)
+![Le Patissier](documentation/features/comment-section)
 
 
 #### All brands page
 
 * All brands page
-![Le Patissier](assets/documentation/features/all-brands-page)
+![Le Patissier](documentation/features/all-brands-page)
 
 #### My Basket Page
 
 * My Basket Page 
-![Le Patissier](assets/documentation/features/my-basket-page)
+![Le Patissier](ocumentation/features/my-basket-page)
 
 #### Checkout Page
 
 * Checkout Page 
-![Le Patissier](assets/documentation/features/checkout-page)
+![Le Patissier](documentation/features/checkout-page)
 
 #### Basket Snippet
 
 * Basket snippet 
-![Le Patissier](assets/documentation/features/basket-snippet)
+![Le Patissier](documentation/features/basket-snippet)
 
 #### Message box
 
 * Message box 
-![Le Patissier](assets/documentation/features/message-box)
+![Le Patissier](documentation/features/message-box)
 
 [Back to top ⇧](#le-patissier)
 
@@ -402,7 +405,7 @@ The developper intended to include a newsletter from in the footer by using Djan
 Unfortunately, for a reason that the developper still ignores, the footer would not load with the tags in it. 
 The developper had to compromise and create a button to redirect the user to the rendered newsletter.html page
 
-**Discrepancies bewteen IDE and Production**
+**Discrepancies between IDE and Production**
 The developper realized that the production site would not laod the landing page picture properly after the deployment to heroku.
 It took the developpper several days and the help of tutors to understand that the project was build and deployed on 2 different databases. After connecting the correct database to the developement environment, the problem was gone.
 
