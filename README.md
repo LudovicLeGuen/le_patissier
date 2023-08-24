@@ -268,118 +268,141 @@ The images used on the website are sourced from various websites which are liste
 #### Navbar
 
 * The logged in navbar
+
 ![Le Patissier](documentation/features/the-logged-in-navbar.JPG)
 
 * The logged out navbar
+
 ![Le Patissier](documentation/features/the-logged-out-navbar.JPG)
 
 * The profile navbar
+
 ![Le Patissier](documentation/features/the-profile-navbar.JPG)
 
 * The admin navbar
-![Le Patissier](assets/documentation/features/the-admin-navbar.JPG)
+
+![Le Patissier](documentation/features/the-admin-navbar.JPG)
 
 * The small device navbar
+
 ![Le Patissier](documentation/features/the-small-device-navbar.JPG)
 
 * The expanded navbar
+
 ![Le Patissier](documentation/features/the-expanded-navbar.JPG)
 
 
 #### Landing Page
 
 * Landing Page 
+
 ![Le Patissier](documentation/features/landing-page.JPG)
 
-#### Footer company section
+#### Footer 
 
 * Footer company section 
+
 ![Le Patissier](documentation/features/footer-company-section.JPG)
 
-#### Footer Legal Section
 
 * Footer Legal Section 
+
 ![Le Patissier](documentation/features/footer-legal-section.JPG)
 
-#### Footer Brands links
 
 * Footer Brands links 
+
 ![Le Patissier](documentation/features/footer-brands-links.JPG)
 
-#### Footer Social links
 
 *  Footer Social links 
-![Le Patissier](documentation/footer-brands-links.JPG)
+
+![Le Patissier](documentation/footer-social-links.JPG)
 
 #### Newsletter 
 
 * Newsletter 
+
 ![Le Patissier](documentation/features/newsletter-1.JPG)
 ![Le Patissier](documentation/features/newsletter-2.JPG)
 
 #### Why Us? Section
 
 * Why Us? Section 
+
 ![Le Patissier](documentation/features/why-us-section.JPG)
 
 #### Search field
 
 * Search field 
+
 ![Le Patissier](documentation/features/search-field.JPG)
 
 #### Categories Section
 
 * Categories Section 
+
 ![Le Patissier](documentation/features/categories-section.JPG)
 
 #### Sort section
 
 * Sort section 
+
 ![Le Patissier](documentation/features/sort-section.JPG)
 
 #### All products page
 
 * Product Card
+
 ![Le Patissier](documentation/features/product-card.JPG)
 
 #### Product details page
 
 * Product Brand link
+
 ![Le Patissier](documentation/features/product-brand-link.JPG)
 
 * Product Description
+
 ![Le Patissier](documentation/features/product-description.JPG)
 
 * Product Price
+
 ![Le Patissier](documentation/features/product-price.JPG)
 
 * The comment section in the product section
+
 ![Le Patissier](documentation/features/comment-section.JPG)
 
 
 #### All brands page
 
 * All brands page
+
 ![Le Patissier](documentation/features/all-brands-page.JPG)
 
 #### My Basket Page
 
 * My Basket Page 
-![Le Patissier](ocumentation/features/my-basket-page.JPG)
+
+![Le Patissier](documentation/features/my-basket-page.JPG)
 
 #### Checkout Page
 
 * Checkout Page 
+
 ![Le Patissier](documentation/features/checkout-page.JPG)
 
 #### Basket Snippet
 
 * Basket snippet 
+
 ![Le Patissier](documentation/features/basket-snippet.JPG)
 
 #### Message box
 
 * Message box 
+
 ![Le Patissier](documentation/features/message-box.JPG)
 
 [Back to top ⇧](#le-patissier)
