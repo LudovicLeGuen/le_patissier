@@ -28,14 +28,111 @@ NavBar responsiveness | NavBar resizes according to devices | As expected | Pass
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar categories responsiveness| Categories become burger menu | As expected | Pass
+
+<details>
+<summary>NavBar categories responsiveness</summary>
+
+![NavBar categories responsiveness](documentation/testings/images/navbar/navbar-categories-responsiveness-1.JPG)
+</details>
+
+<details>
+<summary>NavBar categories responsiveness</summary>
+
+![NavBar categories responsiveness](documentation/testings/images/navbar/navbar-categories-responsiveness-2.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 NavBar categories hover opening| Categories menus open and close on hover with screens above 992px | As expected | Pass
+
+<details>
+<summary>NavBar categories hover opening</summary>
+
+![NavBar categories hover opening](documentation/testings/images/navbar/navbar-categories-hover-opening.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Search field | Search field transforms in button with medium screens and lower | As expected | Pass
+
+<details>
+<summary>Search field</summary>
+
+![Search field](documentation/testings/images/navbar/search-field-1.JPG)
+</details>
+
+<details>
+<summary>Search field</summary>
+
+![Search field](documentation/testings/images/navbar/search-field-2.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Search | Inserting a term gives a lst of products | As expected | Pass
+
+<details>
+<summary>Search</summary>
+
+![Search](documentation/testings/images/navbar/search.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Account icon | Account icon opens on click only | As expected | Pass
+
+<details>
+<summary>Account icon</summary>
+
+![Account icon](documentation/testings/images/navbar/account-icon-on-one-click.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Account icon | Account icon is different for logged in admins and users | As expected | Pass
+
+<details>
+<summary>Account icon</summary>
+
+![Account icon](documentation/testings/images/navbar/account-icon-admin-login.JPG)
+</details>
+
+<details>
+<summary>Account icon</summary>
+
+![Account icon](documentation/testings/images/navbar/account-icon-user-login.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Account icon | Account icon shows log in and register for unlogged users | As expected | Pass
+
+<details>
+<summary>Account icon</summary>
+
+![Account icon](documentation/testings/images/navbar/account-icon-unlogged-users.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Shopping basket | redirects to the shopping basket template | As expected | Pass
+
+<details>
+<summary>Shopping basket</summary>
+
+![Shopping basket](documentation/testings/images/navbar/shopping-basket.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Action messages | messages appears on the top right corner consistenly | As expected | Pass
+
+<details>
+<summary>Action messages</summary>
+
+![Action messages](documentation/testings/images/navbar/action-messages.JPG)
+</details>
+
 
 #### Footer
 
