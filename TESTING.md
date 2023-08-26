@@ -12,6 +12,21 @@ This table shows all the manual testing done for the website, and whether it wor
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar responsiveness | NavBar resizes according to devices | As expected | Pass
+
+<details>
+<summary>NavBar responsiveness</summary>
+
+![NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-1.JPG)
+</details>
+
+<details>
+<summary>NavBar responsiveness</summary>
+
+![NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-2.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 NavBar categories responsiveness| Categories become burger menu | As expected | Pass
 NavBar categories hover opening| Categories menus open and close on hover with screens above 992px | As expected | Pass
 Search field | Search field transforms in button with medium screens and lower | As expected | Pass
