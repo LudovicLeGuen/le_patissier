@@ -69,12 +69,12 @@ Search field | Search field transforms in button with medium screens and lower |
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
-Search | Inserting a term gives a lst of products | As expected | Pass
+Search | Inserting a term gives a list of products | As expected | Pass
 
 <details>
 <summary>Search</summary>
 
-![Search](documentation/testings/images/navbar/search.JPG)
+![Search]()
 </details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
@@ -139,15 +139,85 @@ Action messages | messages appears on the top right corner consistenly | As expe
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Footer responsiveness | Footer layout changes according to devices | As expected | Pass
+
+<details>
+<summary>Footer responsiveness</summary>
+
+![Footer responsiveness](documentation/testings/images/footer/footer-responsiveness-1.JPG)
+</details>
+
+<details>
+<summary>Footer responsiveness</summary>
+
+![Footer responsiveness](documentation/testings/images/footer/footer-responsiveness-2.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Footer links | All external links open a new tab in the browser | As expected | Pass
-Footer links | All links redirects to the correct content | As expected | Pass
+
+<details>
+<summary>Footer links</summary>
+
+![Footer links ](documentation/testings/images/footer/footer-links-1.JPG)
+</details>
+
+<details>
+<summary>Footer links</summary>
+
+![Footer links ](documentation/testings/images/footer/footer-links-2.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
+Footer links | All links redirects to the correct brand | As expected | Pass
 Footer brands and legal links | Links are underlined on hover | As expected | Pass
 
+<details>
+<summary>Footer brands and legal links</summary>
+
+![Footer brands and legal links](documentation/testings/images/footer/footer-brands-and-legal-links.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Newsletter button | Button redirects to Newsletter registration form | As expected | Pass
+
+<details>
+<summary>Newsletter button</summary>
+
+![Newsletter button](documentation/testings/images/footer/newsletter-button.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Newsletter button hover | Button changes color on hover | As expected | Pass
+
+<details>
+<summary>Newsletter button hover</summary>
+
+![Newsletter button hover](documentation/testings/images/footer/newsletter-button-hover.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Newsletter button responsiveness | Enveloppe icons dissapear on screens snmaller than 347px | As expected | Pass
+
+<details>
+<summary>Newsletter button responsiveness</summary>
+
+![Newsletter button responsiveness](documentation/testings/images/footer/newsletter-button-responsiveness.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Contact button | Button redirects to contact us form | As expected | Pass
+
+<details>
+<summary>Contact button</summary>
+
+![Contact button](documentation/testings/images/footer/contact-button.JPG)
+</details>
 
 <br>
 
@@ -156,10 +226,52 @@ Contact button | Button redirects to contact us form | As expected | Pass
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Hero image resizes on mobile | Images resize on mobile | As expected | Pass
+
+<details>
+<summary>Hero image resizes on mobile</summary>
+
+![Hero image resizes on mobile](documentation/testings/images/landing_page/hero-image-resizes-on-mobile.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Title size reduces on smaller screens | Title gets smaller | As expected | Pass
+
+<details>
+<summary>Title size reduces on smaller screens</summary>
+
+![Title size reduces on smaller screens](documentation/testings/images/landing_page/title-size-reduces-on-smaller-screens.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Shop now button reduces size | Buttons gets smaller on small screens | As expected | Pass
+
+<details>
+<summary>Shop now button reduces size</summary>
+
+![Shop now button reduces size](documentation/testings/images/landing_page/shop-now-button-reduces-size.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Shop now button redirection | Button redirects to all products | As expected | Pass
+
+<details>
+<summary>Shop now button redirection</summary>
+
+![Shop now button redirection](documentation/testings/images/landing_page/shop-now-button-redirection.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Why shopping with us section responsiveness | Boxes and title rearrange harmoniously | As expected | Pass
+
+<details>
+<summary>Why shopping with us section responsiveness</summary>
+
+![Why shopping with us section responsiveness](documentation/testings/images/landing_page/why-shopping-with-us-section-responsiveness.JPG)
+</details>
 
 <br>
 
