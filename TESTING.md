@@ -30,11 +30,14 @@ Footer responsiveness | Footer layout changes according to devices | As expected
 Footer links | All external links open a new tab in the browser | As expected | Pass
 Footer links | All links redirects to the correct content | As expected | Pass
 Footer brands and legal links | Links are underlined on hover | As expected | Pass
+
+---------------|-----------------|---------------|----------
 Newsletter button | Button redirects to Newsletter registration form | As expected | Pass
 Newsletter button hover | Button changes color on hover | As expected | Pass
 Newsletter button responsiveness | Enveloppe icons dissapear on screens snmaller than 347px | As expected | Pass
 Contact button | Button redirects to contact us form | As expected | Pass
 
+<br>
 
 ### Landing Page
 
@@ -46,6 +49,7 @@ Shop now button reduces size | Buttons gets smaller on small screens | As expect
 Shop now button redirection | Button redirects to all products | As expected | Pass
 Why shopping with us section responsiveness | Boxes and title rearrange harmoniously | As expected | Pass
 
+<br>
 
 ### All products page
 
@@ -62,6 +66,8 @@ Discount category shows products on sale | products with a discount are shown | 
 Sorting menu | sorts products correctly | As expected | Pass
 Items quantity in the category | Show the correct number of different products | As expected | Pass
 Edit and delete buttons | Show only for logged in admins | As expected | Pass
+
+<br>
 
 ### Product details page
 
@@ -82,6 +88,7 @@ Rating a product in Review| Choosing a rating changes the overall rating | As ex
 Rating a product in Review| Shows the number of reviews | As expected | Pass
 No rating | Message "no rating" in product details | As expected | Pass
 
+<br>
 
 ### Contact page
 
@@ -89,6 +96,8 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Contact form sent to admin panel | Message show in admin | As expected | Pass
 User gets feedback on submission | Success or error message show | As expected | Pass
+
+<br>
 
 ### Shopping Basket page
 
@@ -103,6 +112,7 @@ Removing product | Removes product Changes price accordingly | As expected | Pas
 Delivery treshhold | Is 10% and 0euro with purchase over 50 euros  | As expected | Pass
 Success messages | Feedback messages are given with each action | As expected | Pass
 
+<br>
 
 ### Product Management page
 
@@ -115,13 +125,15 @@ Edit a product | Form is prefilled with the product info | As expected | Pass
 Edit product image | Edit Image field contains the actual picture | As expected | Pass
 Removing image | Default picture will be seen on product  | As expected | Pass
 
+<br>
+
 ### My Profile page
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 My Profile link renders Profile page | profile.html is shown | As expected | Pass
 User information is displayed on Profile page | Name and Address fields shown | As expected | Pass
-Update Address button saves updated form | Message "Profile updated successfully" shown | As expected | Pass
+Update button saves updated form | Message "Profile updated successfully" shown | As expected | Pass
 User order history shown on Profile Orders tab | Orders tab shows all past orders | As expected | Pass
 Delete Account tab opens account delete message | message "Warning! Account deletion is permanent. Proceed?" shown | As expected | Pass
 Delete Account button opens account delete confirmation page | user-delete with user id in url shown | As expected | Pass
@@ -129,6 +141,8 @@ Return button on user_delete page redirects back to profile | profile.html rende
 Confirm button on user_delete page redirects back to index.html | index.html renders | As expected | Pass
 Confirmation message on user_delete shows | message "Profile successfully deleted" shown | As expected | Pass
 All of a users orders are deleted on profile deletion | orders removed from database | As expected | Pass
+
+<br>
 
 ### Logging pages
 
@@ -143,18 +157,26 @@ Submitting log out | User is logged out | As expected | Pass
 Logging out message | success Message shows up| As expected | Pass
 Log out redirection | logged out User is redirected to home page | As expected | Pass
 
+<br>
 
 ### Subscribing pages
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
-Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+Inserting incomplete email | Error message shows | As expected | Pass
+Completing submission | Redirects to subscribe success page | As expected | Pass
+Completing unsubscribe form | Redirects to unsubscribe success page | As expected | Pass
+
+<br>
+
 
 ### Stripe Payment
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
-Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+Payment being processed | Icon and overlay appears when payment is being processed | As expected | Pass
+Confirmation page | order number created | As expected | Pass
+Confirmation page | email sent to correct email | As expected | Pass
 
 <br>
 
@@ -169,26 +191,6 @@ Update quantity button updates subtotal | Subtotal calculated correctly | As exp
 Delete product button deletes product | Cart is updated without that product | As expected | Pass
 Secure Checkout button shows checkout page | checkout.html renders | As expected | Pass
 User information is prepoulated if saved in profile | Fields are automatically filled | As expected | Pass
-Stripe validation works on incorrect/incomplete card number | Stripe validation error shown | As expected | Pass
-Successful checkout | Checkout loading overlay shown | As expected | Pass
-Successful checkout | Checkout Success page shown | As expected | Pass
-Successful checkout | Confirmation email sent | As expected | Pass
-Checkout other products button clicked | Products page shown | As expected | Pass
 
 <br>
 
-## Errors
-
-Error Tested | Expected Result | Actual Result | Pass/Fail
--------------|-----------------|---------------|----------
-Registration page validates each input for empty or whitespaces | message "Please fill in this field is shown" | As expected | Pass
-Registration page validates email address | message "A user is already registered with this e-mail address." | As expected | Pass
-Registration page validates username | message "A user with that username already exists." | As expected | Pass
-Submitting an empty review as logged in user | Message "Your review has not been submitted" | As expected | Pass
-Add Product form has validation | Product won't add without title, price, SKU | As expected | Pass
-Contact form validates for whitespaces | message "Please fill in this field" shows | As expected | Pass
-Item Quantity can't be less than 1 or more than 99 | Buttons disabled on 1 and 99 | As expected | Pass
-User tried to render profile URL when not logged in | user redirected to log in page | As expected | Pass
-User tried to render delete_profile URL when not logged in | user redirected to login page | As expected | Pass
-User tried to render profile URL for another user | user redirected to 403 page | As expected | Pass
-User tried to render delete_profile URL for another user | user redirected to 403 page | As expected | Pass

@@ -19,7 +19,7 @@
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 {% endif %}
             </div>
         </div>
@@ -32,19 +32,20 @@
                         {{ product.brand.friendly_name }}</a>
                     <hr>
                 </p>
-                {% if product.calc_rating > 0 %}                
-                    <small><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ product.calc_rating }} / 5 | {{ product.approved_review }}
-                        {% if product.approved_review == 1 %}
-                            review 
-                        {% else %} 
-                            reviews
-                        {% endif %} </small>
-                {% else %}
-                    {% if product.rating %}
-                        <small><i class="fas fa-star mr-1" style='color: #ffd700'></i>{{ product.rating }} / 5 </small>
+                {% if product.calc_rating > 0 %}
+                <small><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ product.calc_rating }} / 5 | {{
+                    product.approved_review }}
+                    {% if product.approved_review == 1 %}
+                    review
                     {% else %}
-                        <small>No Rating</small>
-                    {% endif %}
+                    reviews
+                    {% endif %} </small>
+                {% else %}
+                {% if product.rating %}
+                <small><i class="fas fa-star mr-1" style='color: #ffd700'></i>{{ product.rating }} / 5 </small>
+                {% else %}
+                <small>No Rating</small>
+                {% endif %}
                 {% endif %}
 
                 {% if product.discount != 0 %}
@@ -124,53 +125,56 @@
             <h3> Reviews </h3>
         </div>
     </div>
-    <div class="row d-flex justify-content-center my-3">
-        {% if request.user.is_authenticated %}
-        <form method="post" action=".">
-            {% csrf_token %}
-            {% for field in form %}
-                     
-            {{ field | as_crispy_field }}
+    <div class="row d-flex justify-content-center my-3 ">
+        <div class="col-3">
+            {% if request.user.is_authenticated %}
+            <form method="post" action=".">
+                {% csrf_token %}
+                {% for field in form %}
 
-            {% endfor %}            
-            <div>
-                <textarea name="body" cols="30" rows="4" placeholder="Leave a comment..."></textarea>
-            </div>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <label>Rating</label>
-                    <select name="rating">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3" selected>3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                {{ field | as_crispy_field }}
+
+                {% endfor %}
+                <div class="w-100">
+                    <textarea name="body" cols="30" rows="4" placeholder="Leave a comment..."></textarea>
                 </div>
-                <div>
-                    <button>Submit</button>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <label>Rating</label>
+                        <select name="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="btn rounded-0 text-uppercase add-basket-btn">Submit</button>
+                    </div>
                 </div>
-            </div>
-        </form>
-        {% else %}
+            </form>
+            {% else %}
             <div class="my-5 d-flex flex-column text-center ">
                 <h4>Log in to post a review</h4>
                 <p><a class="btn btn-outline-secondary mt-1" href="{% url 'account_login' %}">Login</a></p>
             </div>
-        {% endif %}
+            {% endif %}
+        </div>
     </div>
     <div class="row d-flex justify-content-center flex-column m-auto my-3"></div>
-        {% for review in product.reviews.all %}
-            {% if review.approved == True %}
-                <div class="w-75 m-auto text-center">   
-                    <hr>
-                    <p><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ review.rating}} / 5  | <strong>{{ product.name}} - {{ product.brand.friendly_name }}</strong></p>
-                    <p class="lead">{{ review.body }}</p>
-                    <p class="text-mted">{{ review.created_by }} | {{ review.created_on|date:"d-M-Y" }} | Verified Purchase</p>                 
-                </div>
-            {% endif %}
+    {% for review in product.reviews.all %}
+    {% if review.approved == True %}
+    <div class="w-75 m-auto text-center">
+        <hr>
+        <p><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ review.rating}} / 5 | <strong>{{ product.name}} -
+                {{ product.brand.friendly_name }}</strong></p>
+        <p class="lead">{{ review.body }}</p>
+        <p class="text-mted">{{ review.created_by }} | {{ review.created_on|date:"d-M-Y" }} | Verified Purchase</p>
     </div>
-        {% endfor %}
+    {% endif %}
+</div>
+{% endfor %}
 
 </div>
 

@@ -370,6 +370,12 @@ h1, h2, h3, h4 , h5 , h6{
     width: 100%;
 }
 
+textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
 
 /* Brand card*/
 .brand-img {
