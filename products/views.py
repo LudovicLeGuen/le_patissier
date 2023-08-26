@@ -100,7 +100,7 @@ def product_detail(request, product_id):
                 )
                 messages.success(request,
                                  f'Thank you for reviewing \
-                                 the { product.name }.Your review\
+                                 the { product.name }. Your review\
                                  will be soon approved by an Administrator')
 
             return redirect('product_detail', product_id)

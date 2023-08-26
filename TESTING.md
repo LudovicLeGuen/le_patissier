@@ -15,6 +15,7 @@ NavBar responsiveness | NavBar resizes according to devices | As expected | Pass
 NavBar categories responsiveness| Categories become burger menu | As expected | Pass
 NavBar categories hover opening| Categories menus open and close on hover with screens above 992px | As expected | Pass
 Search field | Search field transforms in button with medium screens and lower | As expected | Pass
+Search | Inserting a term gives a lst of products | As expected | Pass
 Account icon | Account icon opens on click only | As expected | Pass
 Account icon | Account icon is different for logged in admins and users | As expected | Pass
 Account icon | Account icon shows log in and register for unlogged users | As expected | Pass
@@ -68,19 +69,43 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 All products | Shows all products by default | As expected | Pass
 Product card layout | 4 cards per row on large screens | As expected | Pass
-Clicking Review This Product as logged in user | Review form opens | As expected | Pass
-Submitting a review as logged in user | Message "Your review has been successfully added!" | As expected | Pass
-No review form when user is not logged in  | Log in to post a review appears with the link to log in| As expected | Pass
+Edit and delete buttons | Show only for logged in admins | As expected | Pass
+Quantity selector | cannot go under 1 and cannot go above 99 | As expected | Pass
+Adding product to basket | Add the coorect amount of the correct product in the basket | As expected | Pass
+Keep shopping button | redirects to all products | As expected | Pass
+Product details | Are from the correct product | As expected | Pass
+Submitting a review | Success mesage is sent | As expected | Pass
+Submitting a review | Does not show as long as not approved by admins | As expected | Pass
+Submitting another review | Submitting review for same product updates product | As expected | Pass
+No review form when user is not logged in | "Log in to post a review" appears with the button to log in| As expected | Pass
+Rating a product in Review| Choosing a rating changes the overall rating | As expected | Pass
+Rating a product in Review| Shows the number of reviews | As expected | Pass
+No rating | Message "no rating" in product details | As expected | Pass
+
 
 ### Contact page
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
+Contact form sent to admin panel | Message show in admin | As expected | Pass
+User gets feedback on submission | Success or error message show | As expected | Pass
+
+### Shopping Basket page
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
-User gets feedback on contact form submission | Message "Your message was sent! We'll be in touch shortly." shows | As expected | Pass
 
+### Product Management page
 
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
+Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
 
+### My Profile page
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 My Profile link renders Profile page | profile.html is shown | As expected | Pass
 User information is displayed on Profile page | Name and Address fields shown | As expected | Pass
 Update Address button saves updated form | Message "Profile updated successfully" shown | As expected | Pass
@@ -91,6 +116,27 @@ Return button on user_delete page redirects back to profile | profile.html rende
 Confirm button on user_delete page redirects back to index.html | index.html renders | As expected | Pass
 Confirmation message on user_delete shows | message "Profile successfully deleted" shown | As expected | Pass
 All of a users orders are deleted on profile deletion | orders removed from database | As expected | Pass
+
+### Logging pages
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
+Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+
+### Subscribing pages
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
+Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+
+### Stripe Payment
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
+Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+
+
+
 Add Product redirects to add_product.html form | add_product.html form renders | As expected | Pass
 Edit Product redirects to update form | edit_product form renders | As expected | Pass
 Delete Product link renders delete confirmation modal | Modal renders | As expected | Pass
@@ -104,7 +150,7 @@ User shown log out message feedback | message "You have signed out." shown | As 
 
 <br>
 
-### Checkout
+### Checkout page
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
@@ -115,11 +161,6 @@ Update quantity button updates subtotal | Subtotal calculated correctly | As exp
 Delete product button deletes product | Cart is updated without that product | As expected | Pass
 Secure Checkout button shows checkout page | checkout.html renders | As expected | Pass
 User information is prepoulated if saved in profile | Fields are automatically filled | As expected | Pass
-Coupon code field renders | Coupon form is shown | As expected | Pass
-Correct coupon is entered | Sucess popup message "Coupon code: -code- applied" | As expected | Pass
-Correct coupon is entered | Text "Applied coupon -code- for -amount-% off!" | As expected | Pass
-Correct coupon is entered | Discount applied to Grand Total | As expected | Pass
-Remove coupon link clicked | Discount removed from Grand Total | As expected | Pass
 Stripe validation works on incorrect/incomplete card number | Stripe validation error shown | As expected | Pass
 Successful checkout | Checkout loading overlay shown | As expected | Pass
 Successful checkout | Checkout Success page shown | As expected | Pass

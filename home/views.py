@@ -2,8 +2,6 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.contrib import messages
 
-# Create your views here.
-
 
 def index(request):
     """ This view returns the index page """
@@ -52,7 +50,7 @@ def contact(request):
             form.save()
             messages.success(
                 request,
-                "Thank you, your message is sent. We will contact you shortly."
+                "Thank you for contacting us. We will be in touch shortly."
             )
             return redirect("contact")
         else:
