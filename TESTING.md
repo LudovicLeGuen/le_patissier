@@ -94,13 +94,26 @@ User gets feedback on submission | Success or error message show | As expected |
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
-Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+One Reference pre row | Each product is repreented by a row | As expected | Pass
+Product details | Are identical to the product details page | As expected | Pass
+Price on basket Icon and grand total | prices are identical | As expected | Pass
+Updating a quantity | Changes the price and grand total accordingly | As expected | Pass
+Removing product | Removes product from basket | As expected | Pass
+Removing product | Removes product Changes price accordingly | As expected | Pass
+Delivery treshhold | Is 10% and 0euro with purchase over 50 euros  | As expected | Pass
+Success messages | Feedback messages are given with each action | As expected | Pass
+
 
 ### Product Management page
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
-Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+Adding a product message | Success message when product is added | As expected | Pass
+Cancel button | Redirects user to all product page | As expected | Pass
+Adding a product | all Form fileds are blank | As expected | Pass
+Edit a product | Form is prefilled with the product info | As expected | Pass
+Edit product image | Edit Image field contains the actual picture | As expected | Pass
+Removing image | Default picture will be seen on product  | As expected | Pass
 
 ### My Profile page
 
@@ -121,7 +134,15 @@ All of a users orders are deleted on profile deletion | orders removed from data
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
-Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
+Clicking on log in | opens log in form | As expected | Pass
+Submitting log in | User is logged in | As expected | Pass
+Logging in message | success Message shows up| As expected | Pass
+Log in redirection | logged in User is redirected to home page | As expected | Pass
+Clicking on log out | opens log out form | As expected | Pass
+Submitting log out | User is logged out | As expected | Pass
+Logging out message | success Message shows up| As expected | Pass
+Log out redirection | logged out User is redirected to home page | As expected | Pass
+
 
 ### Subscribing pages
 
@@ -134,19 +155,6 @@ Contact form saves to admin panel | admin panel shows message, name and email | 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Contact form saves to admin panel | admin panel shows message, name and email | As expected | Pass
-
-
-
-Add Product redirects to add_product.html form | add_product.html form renders | As expected | Pass
-Edit Product redirects to update form | edit_product form renders | As expected | Pass
-Delete Product link renders delete confirmation modal | Modal renders | As expected | Pass
-Delete Product cancel button closes Modal | Modal is closed | As expected | Pass
-Delete Product delete button redirects to Products page | products.html renders | As expected | Pass
-Product deleted from database on confirmation | Product deleted | As expected | Pass
-User redirected to logout confirmation when Logout is clicked | account/logout.html renders | As expected | Pass
-User redirected when Profile Logout is cancelled | index.html renders | As expected | Pass
-User redirected to Index page when logged out | index.html renders | As expected | Pass
-User shown log out message feedback | message "You have signed out." shown | As expected | Pass
 
 <br>
 
