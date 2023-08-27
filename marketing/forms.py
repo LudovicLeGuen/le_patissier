@@ -3,5 +3,5 @@ from django import forms
 
 
 class EmailForm(forms.Form):
-    email = forms.EmailField(label='Insert your email to subscribe',
+    email = forms.EmailField(label='',
                              max_length=128)

@@ -10,9 +10,28 @@
 {% endblock %}
 
 {% block content %}
-<div class="container mt-5">
-    <h1>{{ title }}</h1>
-    <p>{{ message }}</p>
+<div class="container-fluid">
+    <div class="col d-flex flex-column align-items-center mt-3">
+        <h2 class="title-font">Newsletter</h2>
+        <hr class="w-50 text-center mb-1">
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="my-4">{{ title }}</h1>
+            <p class="my-4">{{ message }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg my-4">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+        </div>
+    </div>
 </div>
+
 
 {% endblock %}

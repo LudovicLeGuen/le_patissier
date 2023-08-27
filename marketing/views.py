@@ -83,7 +83,7 @@ def unsubscribe_view(request):
 
 def unsubscribe_success_view(request):
     return render(request, 'marketing/message.html', {
-        'title': 'Successfully unsubscribed',
+        'title': 'Successfully Unsubscribed',
         'message': 'You have been successfully \
         unsubscribed from our Newsletter.',
     })
