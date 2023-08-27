@@ -1,6 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+
+from django.urls import reverse, reverse_lazy
+from django.http import HttpResponseRedirect
+
+from django.views.generic import View, UpdateView, DetailView, DeleteView
+from django.contrib import messages
+
 from .models import UserProfile
 from .forms import UserProfileForm
 
@@ -49,3 +57,29 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+# copied from Victoria Traynor's Levelup Loot site
+# https://github.com/VictoriaT87/level_up_loot_vt/blob/main/profiles/views.py
+class DeleteMyProfile(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    Deletes users account alongside ALL data from database.
+    """
+
+    model = UserProfile
+    template_name = "profiles/delete-profile.html"
+    form_class = UserProfileForm
+    success_url = reverse_lazy("home")
+
+    def test_func(self):
+        obj = self.get_object()
+        return obj.user == self.request.user
+
+    def delete(self, request, *args, **kwargs):
+        """
+        Delete Profile
+        """
+        user = self.get_object().user
+        user.delete()
+        messages.success(self.request, "You account is deleted")
+        return HttpResponseRedirect(self.success_url)

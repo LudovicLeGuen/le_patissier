@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4">My Profile</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-5 m-5 ">
+                
+                  <h2 class="delete">WARNING</h2>
+                  <hr>
+                  <p class="delete-p">You are about to delete your account.</p>
+                  <p>You will loose all your orders, all your reviews and all your ratings</p>
+                  <strong><p>This operation cannot be undone</p></strong>
+                  <p>Are you certain you want to delete your account?</p>                
+                  <form action="." method="POST" class="padding" id="delete">{% csrf_token %}
+                    {{ form.as_p}}
+                    <button type="submit" class="profile-btns btn btn-danger">Confirm</button>
+                    <a class="btn product-btn" href="{% url 'profile' %}">Return to my profile</a>
+                  </form>
+                </div>
+              </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+{% endblock %}
