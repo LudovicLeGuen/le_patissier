@@ -33,12 +33,11 @@
                     <hr>
                 </p>
                 {% if product.calc_rating > 0 %}
-                <small><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ product.calc_rating }} / 5 | {{
-                    product.approved_review }}
+                <small><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ product.calc_rating }} / 5 | {{ product.approved_review }}
                     {% if product.approved_review == 1 %}
-                    review
+                        review
                     {% else %}
-                    reviews
+                        reviews
                     {% endif %} </small>
                 {% else %}
                 {% if product.rating %}

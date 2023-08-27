@@ -385,19 +385,142 @@ Edit and delete buttons | Show only for logged in admins | As expected | Pass
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 All products | Shows all products by default | As expected | Pass
+
+<details>
+<summary>All products</summary>
+
+![All products](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Product card layout | 4 cards per row on large screens | As expected | Pass
+
+<details>
+<summary>Product card layout</summary>
+
+![Product card layout](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Edit and delete buttons | Show only for logged in admins | As expected | Pass
+
+<details>
+<summary>Edit and delete buttons</summary>
+
+![Edit and delete buttons](documentation/testings/images/all_products_page/edit-and-delete-buttons.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Quantity selector | cannot go under 1 and cannot go above 99 | As expected | Pass
+
+<details>
+<summary>Quantity selector</summary>
+
+![Quantity selector](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Adding product to basket | Add the coorect amount of the correct product in the basket | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Keep shopping button | redirects to all products | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Product details | Are from the correct product | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Submitting a review | Success mesage is sent | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Submitting a review | Does not show as long as not approved by admins | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Submitting another review | Submitting review for same product updates product | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 No review form when user is not logged in | "Log in to post a review" appears with the button to log in| As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Rating a product in Review| Choosing a rating changes the overall rating | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Rating a product in Review| Shows the number of reviews | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 No rating | Message "no rating" in product details | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
 
 <br>
 
