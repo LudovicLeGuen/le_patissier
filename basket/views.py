@@ -36,6 +36,25 @@ def add_to_basket(request, item_id):
     return redirect(redirect_url)
 
 
+def add_directly(request, item_id):
+    """ Add 1 product directly from product card to the basket """
+
+    product = get_object_or_404(Product, pk=item_id)
+    redirect_url = request.POST.get('redirect_url')
+    basket = request.session.get('basket', {})
+
+    if item_id in list(basket.keys()):
+        basket[item_id] += 1
+        messages.success(request, f'You have now {basket[item_id]} \
+                         {product.name}s in your basket')
+    else:
+        basket[item_id] = 1
+        messages.success(request, f'The {product.name} is in your basket')
+
+    request.session['basket'] = basket
+    return redirect(redirect_url)
+
+
 def adjust_basket(request, item_id):
     """Adjust quantity and amount of a specified product"""
 
