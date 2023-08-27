@@ -280,16 +280,103 @@ Why shopping with us section responsiveness | Boxes and title rearrange harmonio
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 All products | Shows all products by default | As expected | Pass
+
+<details>
+<summary>All products</summary>
+
+![All products](documentation/testings/images/all_products_page/all-products.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Product card layout | 4 cards per row on large screens | As expected | Pass
+
+<details>
+<summary>Product card layout</summary>
+
+![Product card layout](documentation/testings/images/all_products_page/product-card-layout.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Product card layout responsiveness| number of items per reduces with smaller screens | As expected | Pass
+
+<details>
+<summary>Product card layout responsiveness</summary>
+
+![Product card layout responsiveness](documentation/testings/images/all_products_page/product-card-layout-responsiveness.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
+Product card image | Opens the product detail page | As expected | Pass
 Product card image| default no image shows when no pitcure given to product | As expected | Pass
-Click on cards image | Opens the product detail page | As expected | Pass
+
+<details>
+<summary>Product card image</summary>
+
+![Product card image](documentation/testings/images/all_products_page/product-card-image.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Click on cards Brand | Shows only the products of the brand | As expected | Pass
+
+<details>
+<summary>Click on cards Brand</summary>
+
+![Click on cards Brand](documentation/testings/images/all_products_page/click-on-cards-brand.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Category Selection | shows the correct products | As expected | Pass
+
+<details>
+<summary>Category Selection</summary>
+
+![Category Selection](documentation/testings/images/all_products_page/category-selection.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Discount category shows products on sale | products with a discount are shown | As expected | Pass
+
+<details>
+<summary>Discount category shows products on sale</summary>
+
+![Discount category shows products on sale](/workspaces/le_patissier/documentation/testings/images/all_products_page/discount-category-shows-products-on-sale.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Sorting menu | sorts products correctly | As expected | Pass
+
+<details>
+<summary>Sorting menu</summary>
+
+![Sorting menu](documentation/testings/images/all_products_page/sorting-menu.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Items quantity in the category | Show the correct number of different products | As expected | Pass
+
+<details>
+<summary>Items quantity in the category</summary>
+
+![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
+</details>
+
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|---------------|----------
 Edit and delete buttons | Show only for logged in admins | As expected | Pass
+
+<details>
+<summary>Edit and delete buttons</summary>
+
+![Edit and delete buttons](documentation/testings/images/all_products_page/edit-and-delete-buttons.JPG)
+</details>
 
 <br>
 
