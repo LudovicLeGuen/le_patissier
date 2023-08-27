@@ -336,6 +336,21 @@ h1, h2, h3, h4 , h5 , h6{
     letter-spacing: 1.5px;
 }
 
+.unsubscribe-btn {
+    background-color: #060B06;
+    color: white !important;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.unsubscribe-btn:hover,
+.unsubscribe-btn:active,
+.unsubscribe-btn:focus {
+    background: #dc3545;
+    color: white !important;
+    border: 1px solid #060B06;
+}
+
 .add-basket-btn {
     background-color: #060B06;
     color: white !important;
