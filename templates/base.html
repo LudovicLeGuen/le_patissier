@@ -17,19 +17,26 @@
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d16a3d2fb1.js" crossorigin="anonymous"></script>
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -42,8 +49,8 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div class="w100 text-center top-banner"><i class="fa-solid fa-truck-fast"></i> <em>Free delivery from 
-               {{ free_delivery_threshold }} €</em>
+        <div class="w100 text-center top-banner"><i class="fa-solid fa-truck-fast"></i> <em>Free delivery from
+                {{ free_delivery_threshold }} €</em>
         </div>
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -120,21 +127,21 @@
     </header>
 
     {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -142,134 +149,147 @@
 
     {% block content %}
     {% endblock %}
-            
-<!-- Footer based on https://mdbootstrap.com/-->
-<div class="footer">
-<footer class="text-center text-lg-start bg-light ">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center p-4 mt-5 border-bottom">
-      <div class="me-5 ">
-        <i class="fa-regular fa-envelope fa-2x align-middle"></i>  
-     <a class="btn btn-outline-dark font-weight-bold font-italic" href="{% url 'subscribe' %}">Subscribe to our Newsletter</a>  
-     <i class="fa-regular fa-envelope fa-2x align-middle"></i>
-      </div>
 
-    </section>
-  
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-                Le Patissier
-            </h6>
-            <p>
-                <i class="fas fa-home me-3"></i> Chmelova 17, Bratislava
-            </p>
-            <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@le-patissier.com
-            </p>
-            <p>
-                <i class="fas fa-phone me-3"></i> + 33 12 345 678
-            </p>
-            <p>
-                <i class="fa-solid fa-at"></i> <a href="{% url 'contact' %}" class="text-reset">Contact us</a> 
-            </p>
+    <!-- Footer based on https://mdbootstrap.com/-->
+    <div class="footer">
+        <footer class="text-center text-lg-start bg-light ">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center p-4 mt-5 border-bottom">
+                <div class="me-5 ">
+                    <i class="fa-regular fa-envelope fa-2x align-middle"></i>
+                    <a class="btn btn-outline-dark font-weight-bold font-italic" href="{% url 'subscribe' %}">Subscribe
+                        to our Newsletter</a>
+                    <i class="fa-regular fa-envelope fa-2x align-middle"></i>
+                </div>
+
+            </section>
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Le Patissier
+                            </h6>
+                            <p>
+                                <i class="fas fa-home me-3"></i> Chmelova 17, Bratislava
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@le-patissier.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone me-3"></i> + 33 12 345 678
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-at"></i> <a href="{% url 'contact' %}" class="text-reset">Contact
+                                    us</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Brands
+                            </h6>
+                            <p>
+                                <a target="_blank" rel="noopener" href="https://www.matferbourgeat.com"
+                                    class="text-reset">Mafter</a>
+                            </p>
+                            <p>
+                                <a target="_blank" rel="noopener" href="https://www.hendi.eu/en/"
+                                    class="text-reset">Hendi</a>
+                            </p>
+                            <p>
+                                <a target="_blank" rel="noopener" href="https://mallardferriere.com/"
+                                    class="text-reset">Mallard Ferriere</a>
+                            </p>
+                            <p>
+                                <a target="_blank" rel="noopener" href="https://www.debuyer.com/fr/"
+                                    class="text-reset">De Buyer</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Legal
+                            </h6>
+                            <p>
+                                <a href="{% url 'terms_conditions' %}" class="text-reset">Terms and Conditions</a>
+                            </p>
+                            <p>
+                                <a href="{% url 'guarantee' %}" class="text-reset">Our Guarantees</a>
+                            </p>
+                            <p>
+                                <a href="{% url 'legal' %}" class="text-reset">Legal Statement</a>
+                            </p>
+                            <p>
+                                <a href="{% url 'privacy_policy' %}" class="text-reset">Privacy Policy</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Social Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+                            <p>
+                                <a href="https://www.facebook.com/people/Le-Patissier/61550334255474/"
+                                    aria-label="facebook" target="_blank" rel="noopener" class="me-4 text-reset">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://twitter.com/" aria-label="twitter" target="_blank" rel="noopener"
+                                    class="me-4 text-reset">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/" aria-label="instagram" target="_blank"
+                                    rel="noopener" class="me-4 text-reset">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.youtube.com/" aria-label="youtube" target="_blank" rel="noopener"
+                                    class="me-4 text-reset">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                Code Institute's eCommerce Project by Ludovic Le Guen <a
+                    href="https://github.com/LudovicLeGuen/le_patissier" aria-label="github" target="_blank"
+                    class="me-4 text-reset">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
             </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Brands
-            </h6>
-            <p>
-              <a target="_blank" rel="noopener" href="https://www.matferbourgeat.com" class="text-reset">Mafter</a>
-            </p>
-            <p>
-              <a target="_blank" rel="noopener" href="https://www.hendi.eu/en/" class="text-reset">Hendi</a>
-            </p>
-            <p>
-              <a target="_blank" rel="noopener" href="https://mallardferriere.com/" class="text-reset">Mallard Ferriere</a>
-            </p>
-            <p>
-              <a target="_blank" rel="noopener" href="https://www.debuyer.com/fr/" class="text-reset">De Buyer</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Legal
-            </h6>
-            <p>
-              <a href="{% url 'terms_conditions' %}" class="text-reset">Terms and Conditions</a>
-            </p>
-            <p>
-              <a href="{% url 'guarantee' %}" class="text-reset">Our Guarantees</a>
-            </p>
-            <p>
-              <a href="{% url 'legal' %}" class="text-reset">Legal Statement</a>
-            </p>
-            <p>
-              <a href="{% url 'privacy_policy' %}" class="text-reset">Privacy Policy</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Social Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
-            <p>
-                <a href="https://www.facebook.com/people/Le-Patissier/61550334255474/" aria-label="facebook" target="_blank" rel="noopener" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </p>
-            <p>
-                <a href="https://twitter.com/" aria-label="twitter" target="_blank" rel="noopener" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </p>
-            <p>
-                <a href="https://www.instagram.com/" aria-label="instagram" target="_blank" rel="noopener" class="me-4 text-reset">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </p>
-            <p>
-                <a href="https://www.youtube.com/" aria-label="youtube" target="_blank" rel="noopener" class="me-4 text-reset">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </p>            
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      Code Institute's eCommerce Project by Ludovic Le Guen <a href="https://github.com/LudovicLeGuen/le_patissier" aria-label="github" target="_blank" class="me-4 text-reset">
-        <i class="fa-brands fa-square-github"></i>
-      </a>
+        </footer>
     </div>
-  </footer></div>
-  <!-- Footer -->
+    <!-- Footer -->
 
     {% block postloadjs %}
-        <script type="text/javascript">
-            $('.toast').toast('show');
-        </script>
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
     {% endblock %}
 
 
