@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="mb-5 m-5 ">
+            <div class="mb-3 m-3 ">
                 
                   <h2 class="delete">WARNING</h2>
                   <hr>
@@ -33,8 +33,8 @@
                   <p>Are you certain you want to delete your account?</p>                
                   <form action="." method="POST" class="padding" id="delete">{% csrf_token %}
                     {{ form.as_p}}
-                    <button type="submit" class="profile-btns btn btn-danger">Confirm</button>
-                    <a class="btn product-btn" href="{% url 'profile' %}">Return to my profile</a>
+                    <button type="submit" class="btn btn-danger rounded-0 text-uppercase ">Confirm</button>
+                    <a class="btn btn-black rounded-0 text-uppercase hover-btn" href="{% url 'profile' %}">Return to my profile</a>
                   </form>
                 </div>
               </div>
