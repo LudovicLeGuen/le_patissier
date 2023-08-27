@@ -84,7 +84,7 @@
                         <div class="card-body pb-0">
                             <p class="brand-detail mb-0 text-center"><a href="{% url 'products' %}?brand={{ product.brand.name }}">{{ product.brand.friendly_name }}</a></p>
                         </div>
-                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                        <div class="card-body bg-white pt-0 border-0 text-left">
                             {% if product.discount != 0 %}
                             <div class="row price-row">
                                 <div class="col-6 pr-1">
@@ -136,10 +136,8 @@
                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                 </small>
                                 {% endif %}
+                                <p class="my-2 text-center"><i class="fa-regular fa-circle-check fa-lg" style='color: green'></i> In stock</p>
                             </div>
-                        </div>
-                        <div class="card-body pb-0">
-                            <p class="mb-0 text-center"><i class="fa-regular fa-circle-check fa-lg" style='color: green'></i> In stock</p>
                         </div>
                     </div>
                 </div>

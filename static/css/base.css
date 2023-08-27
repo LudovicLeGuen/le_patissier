@@ -343,12 +343,13 @@ h6 {
 }
 
 #card-basket {
+    color: #9D6133;
     border: none;
     background: none;
 }
 
 #card-basket:hover {
-    color: #9D6133;
+    color: black;
 }
 
 /* Detail page*/
