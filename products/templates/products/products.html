@@ -102,11 +102,19 @@
                             </div>
                             {% endif %}
                             <div class="price-row">
-                                {% if product.rating %}
-                                <small class="text-muted text-center"><i class="fas fa-star mr-1" style="color: #ffd700"></i>{{ product.rating }} /
-                                    5</small>
+                                {% if product.calc_rating > 0 %}
+                                    <small><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ product.calc_rating }} / 5 | {{ product.approved_review }}
+                                    {% if product.approved_review == 1 %}
+                                        review
+                                    {% else %}
+                                        reviews
+                                    {% endif %} </small>
                                 {% else %}
-                                <small class="text-muted text-center">No Rating</small>
+                                    {% if product.rating %}
+                                        <small><i class="fas fa-star mr-1" style='color: #ffd700'></i>{{ product.rating }} / 5 </small>
+                                    {% else %}
+                                        <small>No Rating</small>
+                                    {% endif %}
                                 {% endif %}
                             </div>
                             <div>
