@@ -122,7 +122,7 @@
                                     {% csrf_token %}
                                     <div class="text-center">
                                         <div>
-                                            <button id="card-basket" type="submit"><i class="fas fa-shopping-bag fa-2x"></i></button>
+                                            <button class="card-basket" type="submit"><i class="fas fa-shopping-bag fa-2x"></i></button>
                                         </div>
                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                         <input type="hidden" name="quantity" value="1">

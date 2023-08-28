@@ -68,7 +68,7 @@
                     <h2 class="logo-font text-black my-0 ml-5"><strong>Le Patissier</strong></h2>
                 </a>
             </div>
-            <!-- Search bar -------------------->
+            <!-- Search bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100 search">
@@ -87,9 +87,9 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
+                        <!-- My Account -->
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <!-- My Account -------------------->
+                            aria-haspopup="true" aria-expanded="false">                            
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -110,6 +110,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item mr-5">
+                        <!-- Basket -->
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_basket' %}">
                             <div class="text-center">

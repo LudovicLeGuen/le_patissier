@@ -341,13 +341,13 @@ h6 {
     color: #9D6133;
 }
 
-#card-basket {
+.card-basket {
     color: #9D6133;
     border: none;
     background: none;
 }
 
-#card-basket:hover {
+.card-basket:hover {
     color: black;
 }
 

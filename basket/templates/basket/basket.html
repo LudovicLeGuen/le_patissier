@@ -26,22 +26,22 @@
             <div class="d-block d-md-none">
                 <div class="row">
                     <div class="col">
-                        {% include "basket/basket-total.html" %}
+                        {% include "./includes/basket-total.html" %}
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        {% include "basket/checkout-buttons.html" %}
+                        {% include "./includes/checkout-buttons.html" %}
                         <p class="text-muted mb-5">A summary of your bag contents is below</p>
                     </div>
                 </div>
                 {% for item in basket_items %}
                 <div class="row">
                     <div class="col-12 col-sm-6 mb-2">
-                        {% include "basket/product-image.html" %}
+                        {% include "./includes/product-image.html" %}
                     </div>
                     <div class="col-12 col-sm-6 mb-2">
-                        {% include "basket/product-info.html" %}
+                        {% include "./includes/product-info.html" %}
                     </div>
                     <div class="col-12 col-sm-6 order-sm-last">
                         <p class="my-0">Price Each: ${{ item.product.price }}</p>
@@ -56,7 +56,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-sm-6">
-                        {% include "basket/quantity-form.html" %}
+                        {% include "./includes/quantity-form.html" %}
                     </div>
                 </div>
                 <div class="row">
@@ -83,10 +83,10 @@
                     {% for item in basket_items %}
                     <tr>
                         <td class="p-3 w-25">
-                            {% include 'basket/product-image.html' %}
+                            {% include './includes/product-image.html' %}
                         </td>
                         <td class="py-3">
-                            {% include 'basket/product-info.html' %}
+                            {% include './includes/product-info.html' %}
                         </td>
                         <td class="py-3">
                             <p class="my-0">{{ item.product.price }}€</p>
@@ -101,7 +101,7 @@
                         </td>
                         <td class="py-3 w-25">
 
-                            {% include 'basket/quantity-form.html' %}
+                            {% include './includes/quantity-form.html' %}
 
                         </td>
                         <td class="py-3">
@@ -117,13 +117,13 @@
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
-                            {% include 'basket/basket-total.html' %}
+                            {% include './includes/basket-total.html' %}
                         </td>
                     </tr>
                     <tr>
                         <td colspan="5" class="text-right">
 
-                            {% include 'basket/checkout-buttons.html' %}
+                            {% include './includes/checkout-buttons.html' %}
 
                         </td>
                     </tr>
@@ -141,7 +141,6 @@
         </a>
         {% endif %}
     </div>
-</div>
 </div>
 {% endblock %}
 
