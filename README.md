@@ -248,7 +248,7 @@ Favicon
 <details>
 <summary>Favicon</summary>
 
-![Le Patissier](assets/readme-files/images/favicon.png)
+![Le Patissier](static/favicon/android-chrome-192x192.png)
 
 </details>
  
