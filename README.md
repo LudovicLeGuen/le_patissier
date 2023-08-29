@@ -472,7 +472,11 @@ The view did retrieve the correct data from the database, but the developper did
 
 ### Unfixed Bugs 
 
-**Country field in **
+**Decrement and increment button**
+
+In the Product detail page it is still possibleto add a negative amount of products in the large screen view.
+It is a JS problem. In essence, the problem is not catastrophic since having a negative amount of products simply removes the product and does not affect the Total amount to pay but it definitely is a bad user experience.
+The developper simply did not have enough time to correct it. 
 
 [Back to top ⇧](#le-patissier)
 
@@ -531,44 +535,26 @@ Refer to this [page](TESTING.md) please
 ## Deployment
 The site was developped on Codeanywhere, commiting and pushing to github.
 
-### Deploying on Heroku
-Deploying on Heroky required the following:
-
-* Type "pip freeze > requirements.txt" in your Github terminal to update the requirements.txt file with the list of dependencies used in the project . Save, commit and push.
-
-* Create an Heroku account, select Python as the 'Primary development language'.
-
-* Open the email sent to your address and click the link to verify your email address. Follow the instructions to create a password and log in.
-
-* Click the 'create new app' button on the dashboard. Name your app, select your region and click 'Create App'
-
-* In the "Settings" tab, add both the python and node.js build packs.
-
-* Create a "Config VAR" named 'CREDS' KEY and copy/paste the creds.json file in it.
-
-* Create another "Config VAR" called PORT as the KEY with 8000 as VALUE.
-
-* In the "Deploy" tab, choose GitHub as a deployment method.
-
-* Search for the wanted repository.
-
-* Click on "enable automatic deploys" and then deploy branch.
-
-* once the app built (a minute or two needed)click "View" to access the site.
+### Deployment guide
+Refer to this [page](deployment.md) please
    
 ## Credits 
 ### Code 
 The developer has consulted countless times Stack Overflow and W3Schools in order to build the website.
-The development choices were HEAVILY inspired by [Viva la nacho](https://viva-la-nacho.herokuapp.com/ "Viva la nacho ") by Matthey Hurrell, a fellow Code Institute student.
-Also, The Code Institute "i Think Therefore I blog" course was a solid reference. 
+The development choices were HEAVILY inspired by Boutique Ado, the code instute walkthrough website.
+Also, several fellow students PP5 works were consulted for inspirations purposes but the work by [Victoria Traynor](https://github.com/VictoriaT87/level_up_loot_vt/tree/main) has been particularly admired by the developper.
+In fact the deployment.md page has been simply copy pasted from her github [deplyment guide of victoria](https://github.com/VictoriaT87/level_up_loot_vt/blob/main/documentation/deployment.md). When you can't make it better, copy it! All credits goes to her on this one. 
+All content for the website has been copied from the French website [Le Meilleur du chef](https://www.meilleurduchef.com/) All pictures, descriptions and details of the products are a direct copy of their website. The developper does not have any intention to sell these products. This website is purely educational in scope. 
+
 
 [Back to top ⇧](#le-patissier)
 
 ## Acknowledgements
 I would like to thank:
-* My wife Dominika for her patience, support and tests to help me do as much as I could between my 3 jobs. 
+* My Dear wife Dominika for her patience, support and tests to help me do as much as I could between my 3 jobs. 
 * My fellow coding students of Code institue who have been invaluable on Slack.
 * And last but most definitely not the least.... TUTORING!!!!!! I would not have made it without them.
+* Finally, a huge thank you to Code Institute for building such a great learning platform. I am so grateful. I thank the ENTIRE team from the bottom of my heart.
 
 [Back to top ⇧](#le-patissier)
 
