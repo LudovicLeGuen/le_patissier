@@ -446,7 +446,7 @@ A frequency of 1 newsletter per month is a good start.
 
 ### SEO
 
-The developper has chosen his key meta words based on ![worTracker](https://www.wordtracker.com/search)
+The developper has chosen his key meta words based on [worTracker](https://www.wordtracker.com/search)
 A sitemap and a robot.txt file were also included during the development
 .
 
