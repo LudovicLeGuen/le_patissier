@@ -19,18 +19,21 @@ On top of it, the site owners inntend to create a strong marketing campaign base
     1. [Design Features](#Design-Features) 
     2. [Existing Features](#Existing-Features)
     3. [Features to Implement in the future](#Features-to-Implement-in-the-future)
-4. [Issues and Bugs](#Issues-and-Bugs)
-5. [Technologies Used](#Technologies-Used)
+4. [Business Model](#Business-Model)
+    1. [Marketing Strategy](#Marketing-Strategy)
+    2. [SEO](#SEO)
+5. [Issues and Bugs](#Issues-and-Bugs)
+6. [Technologies Used](#Technologies-Used)
      1. [Main Languages Used](#Main-Languages-Used)
-     3. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-6. [Testing](#Testing)
+     2. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
+7. [Testing](#Testing)
      1. [Testing.md](TESTING.md)
-7. [Deployment](#Deployment)
+8. [Deployment](#Deployment)
      1. [Deploying on GitHub Pages](#Deploying-on-GitHub-Pages)
-8. [Credits](#Credits)
+9. [Credits](#Credits)
      1. [Media](#Media)
      2. [Code](#Code)
-9. [Acknowledgements](#Acknowledgements)
+10. [Acknowledgements](#Acknowledgements)
 ***
 
 ## Introduction
@@ -419,6 +422,36 @@ The website would need the following features in the feature:
 
 
 [Back to top ⇧](#le-patissier)
+
+## Business Model
+This website follows a B2C model. It sells pastry related products directly to the customer. The Users can very quickly create a basket of products and get enticed to spend money. The Website advertises that the company is the exclusive supplier for renowned professional brands. The entire strategy is build on strong Facebook and youtube presence and also on a more traditional approcah with newsletter subscription. 
+
+### Marketing Strategy
+
+#### Social Media
+
+Le patissier intends to have a strong social footmark and will achieve this with 2 main medias:
+Facebook 
+Youtube
+
+Both medias will be regularly fed with recipes, tests and also announcememts. 
+Youtube will most probablyy the most time consuming element of the strtegy and perhaps also the most expensive. But the reputation and the authority gained is worth the investment.
+
+![Le Patissier](documentation/marketing/lepatiisieryoutube.png)
+![Le Patissier](documentation/marketing/lepatissiefb.jpg)
+![Le Patissier](documentation/marketing/lepatissierfb2.jpg)
+
+The newsletter is also a strong (and necessary) tool. 
+A frequency of 1 newsletter per month is a good start. 
+
+### SEO
+
+The developper has chosen his key meta words based on ![worTracker](https://www.wordtracker.com/search)
+A sitemap and a robot.txt file were also included during the development
+.
+
+[Back to top ⇧](#le-patissier)
+
 
 ## Issues and Bugs 
 Apart from the classical small issues such as mispelling in the code or omission to add urls that threw usual errors, the developper encountered some puzzling issues.
