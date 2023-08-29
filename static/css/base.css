@@ -434,6 +434,10 @@ h6 {
     border: 1px solid #060B06;
 }
 
+.add-prod-btn{
+    width: fit-content;
+}
+
 .qty_input {
     width: 100%;
 }

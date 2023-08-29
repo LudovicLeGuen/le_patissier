@@ -96,8 +96,8 @@
                 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row mt-5">
-                        <div class="col-4">
-                            <div class="form-group">
+                        <div class="col-12">
+                            <div class="form-group w-50">
                                 <div class="input-group">
 
                                     <!-- decrement button -->
@@ -126,23 +126,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <!-- Add to basket button -->
-                        <div class="col-8">
-                            <input type="submit" class="btn rounded-0 text-uppercase add-basket-btn"
-                                value="Add to Basket">
-                        </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>    
 
-                        <!-- keep shopping button -->
-                        <div class="row w-50">
-                            <div class="col-12 mx-auto">
-                                <a href="{% url 'products' %}" class="btn keep-shopping-btn rounded-0 mt-5">
+                        <div class="col-12">
+                            <!-- Keep shopping button -->                         
+                                <a href="{% url 'products' %}" class="btn keep-shopping-btn rounded-0 mb-2">
                                     <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                            </div>
-                        </div>
+                                </a>    
+                                            
+                            <!-- Add to basket button -->                
+                                <input type="submit" class="btn rounded-0 text-uppercase add-basket-btn add-prod-btn mb-2"
+                                value="Add to Basket">
+
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+               
+                       </div>
                     </div>
                 </form>
             </section>
@@ -198,15 +196,15 @@
     </div>
     <div class="row d-flex justify-content-center flex-column m-auto my-3"></div>
     {% for review in product.reviews.all %}
-    {% if review.approved == True %}
-    <div class="w-75 m-auto text-center">
-        <hr>
-        <p><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ review.rating}} / 5 | <strong>{{ product.name}} -
-                {{ product.brand.friendly_name }}</strong></p>
-        <p class="lead">{{ review.body }}</p>
-        <p class="text-mted">{{ review.created_by }} | {{ review.created_on|date:"d-M-Y" }} | Verified Purchase</p>
-    </div>
-    {% endif %}
+        {% if review.approved == True %}
+            <div class="w-75 m-auto text-center">
+                <hr>
+                <p><i class="fas fa-star mr-1" style='color: #ffd700'></i> {{ review.rating}} / 5 | <strong>{{ product.name}} -
+                        {{ product.brand.friendly_name }}</strong></p>
+                <p class="lead">{{ review.body }}</p>
+                <p class="text-mted">{{ review.created_by }} | {{ review.created_on|date:"d-M-Y" }} | Verified Purchase</p>
+            </div>
+        {% endif %}
 </div>
 {% endfor %}
 
