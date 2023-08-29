@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /basket/
+Disallow: /profiles/
+Disallow: /checkout/
+Disallow: /admin/
+Sitemap: https://le-patissier-b2d63743796c.herokuapp.com/sitemap.xml

@@ -1,12 +1,12 @@
 
 # Le Patissier - Testing Documentation
 
-![TaW Devices](https://github.com/PPindel/test-a-wheel/assets/114284732/297cc3b7-e11e-4e0a-a9aa-81a7420abdf6)
+![Le Patissier on devices](documentation/features/amiresponsive.PNG)
 
 Below is the documentation of my testing process.
 
 ## Table of contents
-- [Test a Wheel - Testing Documentation](#test-a-wheel---testing-documentation)
+- [Le Patissier - Testing Documentation](#le-patissier---testing-documentation)
   * [Table of contents](#table-of-contents)
   * [Validation Testing](#validation-testing)
     + [CSS](#css)
