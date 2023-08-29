@@ -626,3 +626,9 @@ textarea {
     border: 1px;
     border-color: black;
 }
+
+.form-select {
+    border-color: black;
+    height: 40px;
+    width: 100%;
+}

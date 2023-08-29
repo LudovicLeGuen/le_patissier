@@ -448,7 +448,7 @@ A frequency of 1 newsletter per month is a good start.
 
 The developper has chosen his key meta words based on [worTracker](https://www.wordtracker.com/search)
 A sitemap and a robot.txt file were also included during the development
-.
+
 
 [Back to top ⇧](#le-patissier)
 
@@ -472,7 +472,7 @@ The view did retrieve the correct data from the database, but the developper did
 
 ### Unfixed Bugs 
 
-
+**Country field in **
 
 [Back to top ⇧](#le-patissier)
 
