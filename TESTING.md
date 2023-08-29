@@ -187,31 +187,38 @@ Profiles views py:
 #### Desktop Results
 
 All products Page:
-![image](documentation/lighthouse/all-products-landing page.PNG)
+
+![image](documentation/testings/images/lighthouse/all-products-landing-page.PNG)
 
 
 Basket Page:
-![image](documentation/lighthouse/basket-lighthouse.PNG)
+
+![image](documentation/testings/images/lighthouse/basket-lighthouse.PNG)
 
 
 Checkout Page:
-![image](documentation/lighthouse/checkout-lighthouse.PNG)
+
+![image](documentation/testings/images/lighthouse/checkout-lighthouse.PNG)
 
 
 Landing Page:
-![image](documentation/lighthouse/landing-page-lighthouse.PNG)
+
+![image](documentation/testings/images/lighthouse/landing-page-lighthouse.PNG)
 
 
 Newsletter Page:
-![image](documentation/lighthouse/newsletter-lighthouse.PNG)
+
+![image](documentation/testings/images/lighthouse/newsletter-lighthouse.PNG)
 
 
 Product details Page:
-![image](documentation/lighthouse/product-details-lighthouse.PNG)
+
+![image](documentation/testings/images/lighthouse/product-details-lighthouse.PNG)
 
 
 Profile Page:
-![image](documentation/lighthouse/profile-lighthouse.PNG)
+
+![image](documentation/testings/images/lighthouse/profile-lighthouse.PNG)
 
 
 ## Manual Testing
@@ -226,9 +233,11 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar responsiveness | NavBar resizes according to devices | As expected | Pass
 
-[NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-1.JPG)
+1[NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-1.JPG)
 
 ![NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-2.JPG)
+
+---
 ---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
@@ -240,6 +249,7 @@ NavBar categories responsiveness| Categories become burger menu | As expected | 
 ![NavBar categories responsiveness](documentation/testings/images/navbar/navbar-categories-responsiveness-2.JPG)
 
 ---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
@@ -248,6 +258,7 @@ NavBar categories hover opening| Categories menus open and close on hover with s
 NavBar categories hover opening
 ![NavBar categories hover opening](documentation/testings/images/navbar/navbar-categories-hover-opening.JPG)
 
+---
 ---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
@@ -260,12 +271,15 @@ Search field | Search field transforms in button with medium screens and lower |
 ![Search field](documentation/testings/images/navbar/search-field-2.JPG)
 
 ---
+----
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Account icon | Account icon opens on click only | As expected | Pass
 
 ![Account icon](documentation/testings/images/navbar/account-icon-on-one-click.JPG)
+
+---
 ---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
@@ -275,6 +289,8 @@ Account icon | Account icon is different for logged in admins and users | As exp
 ![Account icon](documentation/testings/images/navbar/account-icon-admin-login.JPG)
 
 ![Account icon](documentation/testings/images/navbar/account-icon-user-login.JPG)
+
+---
 ---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
@@ -283,18 +299,26 @@ Account icon | Account icon shows log in and register for unlogged users | As ex
 
 ![Account icon](documentation/testings/images/navbar/account-icon-unlogged-users.JPG)
 
+---
+---
+
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Shopping basket | redirects to the shopping basket template | As expected | Pass
 
 ![Shopping basket](documentation/testings/images/navbar/shopping-basket.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Action messages | messages appears on the top right corner consistenly | As expected | Pass
 
 ![Action messages](documentation/testings/images/navbar/action-messages.JPG)
+
+---
+---
 
 
 #### Footer
@@ -303,22 +327,25 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Footer responsiveness | Footer layout changes according to devices | As expected | Pass
 
-
 ![Footer responsiveness](documentation/testings/images/footer/footer-responsiveness-1.JPG)
 
 
 ![Footer responsiveness](documentation/testings/images/footer/footer-responsiveness-2.JPG)
 
+---
+---
+
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Footer links | All external links open a new tab in the browser | As expected | Pass
-
 
 ![Footer links ](documentation/testings/images/footer/footer-links-1.JPG)
 
 
 ![Footer links ](documentation/testings/images/footer/footer-links-2.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
@@ -327,36 +354,39 @@ Footer brands and legal links | Links are underlined on hover | As expected | Pa
 
 ![Footer brands and legal links](documentation/testings/images/footer/footer-brands-and-legal-links.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Newsletter button | Button redirects to Newsletter registration form | As expected | Pass
 
-
 ![Newsletter button](documentation/testings/images/footer/newsletter-button.JPG)
 
+------
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Newsletter button hover | Button changes color on hover | As expected | Pass
 
-
 ![Newsletter button hover](documentation/testings/images/footer/newsletter-button-hover.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Newsletter button responsiveness | Enveloppe icons dissapear on screens snmaller than 347px | As expected | Pass
 
-
 ![Newsletter button responsiveness](documentation/testings/images/footer/newsletter-button-responsiveness.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Contact button | Button redirects to contact us form | As expected | Pass
-
-
 
 ![Contact button](documentation/testings/images/footer/contact-button.JPG)
 
@@ -370,28 +400,35 @@ Hero image resizes on mobile | Images resize on mobile | As expected | Pass
 
 ![Hero image resizes on mobile](documentation/testings/images/landing_page/hero-image-resizes-on-mobile.JPG)
 
+---
+---
+
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Title size reduces on smaller screens | Title gets smaller | As expected | Pass
 
-
 ![Title size reduces on smaller screens](documentation/testings/images/landing_page/title-size-reduces-on-smaller-screens.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Shop now button reduces size | Buttons gets smaller on small screens | As expected | Pass
 
-
 ![Shop now button reduces size](documentation/testings/images/landing_page/shop-now-button-reduces-size.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Shop now button redirection | Button redirects to all products | As expected | Pass
 
-
 ![Shop now button redirection](documentation/testings/images/landing_page/shop-now-button-redirection.JPG)
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
@@ -411,6 +448,8 @@ All products | Shows all products by default | As expected | Pass
 
 ![All products](documentation/testings/images/all_products_page/all-products.JPG)
 
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
@@ -419,86 +458,78 @@ Product card layout | 4 cards per row on large screens | As expected | Pass
 
 ![Product card layout](documentation/testings/images/all_products_page/product-card-layout.JPG)
 
+---
+---
+
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Product card layout responsiveness| number of items per reduces with smaller screens | As expected | Pass
 
-<details>
-<summary>Product card layout responsiveness</summary>
-
 ![Product card layout responsiveness](documentation/testings/images/all_products_page/product-card-layout-responsiveness.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Product card image | Opens the product detail page | As expected | Pass
 Product card image| default no image shows when no pitcure given to product | As expected | Pass
 
-<details>
-<summary>Product card image</summary>
-
 ![Product card image](documentation/testings/images/all_products_page/product-card-image.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Click on cards Brand | Shows only the products of the brand | As expected | Pass
 
-<details>
-<summary>Click on cards Brand</summary>
-
 ![Click on cards Brand](documentation/testings/images/all_products_page/click-on-cards-brand.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Category Selection | shows the correct products | As expected | Pass
 
-<details>
-<summary>Category Selection</summary>
-
 ![Category Selection](documentation/testings/images/all_products_page/category-selection.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Discount category shows products on sale | products with a discount are shown | As expected | Pass
 
-<details>
-<summary>Discount category shows products on sale</summary>
-
 ![Discount category shows products on sale](/workspaces/le_patissier/documentation/testings/images/all_products_page/discount-category-shows-products-on-sale.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Sorting menu | sorts products correctly | As expected | Pass
 
-<details>
-<summary>Sorting menu</summary>
-
 ![Sorting menu](documentation/testings/images/all_products_page/sorting-menu.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Items quantity in the category | Show the correct number of different products | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Edit and delete buttons | Show only for logged in admins | As expected | Pass
 
-<details>
-<summary>Edit and delete buttons</summary>
-
 ![Edit and delete buttons](documentation/testings/images/all_products_page/edit-and-delete-buttons.JPG)
-</details>
 
 <br>
 
@@ -508,141 +539,121 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 All products | Shows all products by default | As expected | Pass
 
-<details>
-<summary>All products</summary>
-
 ![All products](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Product card layout | 4 cards per row on large screens | As expected | Pass
 
-<details>
-<summary>Product card layout</summary>
-
 ![Product card layout](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Edit and delete buttons | Show only for logged in admins | As expected | Pass
 
-<details>
-<summary>Edit and delete buttons</summary>
-
 ![Edit and delete buttons](documentation/testings/images/all_products_page/edit-and-delete-buttons.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Quantity selector | cannot go under 1 and cannot go above 99 | As expected | Pass
 
-<details>
-<summary>Quantity selector</summary>
-
 ![Quantity selector](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Adding product to basket | Add the coorect amount of the correct product in the basket | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Keep shopping button | redirects to all products | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Product details | Are from the correct product | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Submitting a review | Success mesage is sent | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Submitting a review | Does not show as long as not approved by admins | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Submitting another review | Submitting review for same product updates product | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 No review form when user is not logged in | "Log in to post a review" appears with the button to log in| As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Rating a product in Review| Choosing a rating changes the overall rating | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Rating a product in Review| Shows the number of reviews | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 No rating | Message "no rating" in product details | As expected | Pass
 
-<details>
-<summary>Items quantity in the category</summary>
-
 ![Items quantity in the category](documentation/testings/images/all_products_page/items-quantity-in-the-category.JPG)
-</details>
 
 <br>
 
@@ -652,28 +663,18 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Contact form sent to admin panel | Message show in admin | As expected | Pass
 
-<details>
-<summary>Contact form sent to admin panel</summary>
-
 ![Contact form sent to admin panel](documentation/testings/images/contact_page/contact-form.JPG)
-</details>
-
-<details>
-
-<summary>Contact form sent to admin panel</summary>
 
 ![Contact form sent to admin panel](documentation/testings/images/contact_page/contact-form-saves-to-admin-panel.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 User gets feedback on submission | Success or error message show | As expected | Pass
 
-<details>
-<summary>User gets feedback on submission</summary>
-
 ![User gets feedback on submission](documentation/testings/images/contact_page/user-gets-feedback-on-contact-form-submission.JPG)
-</details>
 
 <br>
 
@@ -683,90 +684,70 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 One Reference per row | Each product is repreented by a row | As expected | Pass
 
-<details>
-
-<summary>One Reference per row</summary>
-
 ![One Reference per row](documentation/testings/images/shopping_basket_page/one-reference-per-row.JPG)
 
-</details>
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Product details | Are identical to the product details page | As expected | Pass
 
-<details>
-
-<summary>Product details</summary>
-
 ![Product details](documentation/testings/images/shopping_basket_page/product-details.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Price on basket Icon and grand total | prices are identical | As expected | Pass
 
-<details>
-
-<summary>Price on basket Icon and grand total</summary>
-
 ![Price on basket Icon and grand total](documentation/testings/images/shopping_basket_page/price-on-basket-icon-and-grand-total.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Updating a quantity | Changes the price and grand total accordingly | As expected | Pass
 
-<details>
-
-<summary>Updating a quantity</summary>
-
 ![Updating a quantity](documentation/testings/images/shopping_basket_page/updating-a-quantity.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Removing product | Removes product from basket | As expected | Pass
 
-<details>
-
-<summary>Removing product</summary>
-
 ![Removing product](documentation/testings/images/shopping_basket_page/removing-product-from-basket.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Removing product | Removes product Changes price accordingly | As expected | Pass
 
-<details>
-
-<summary>Removing product</summary>
-
 ![Removing product](documentation/testings/images/shopping_basket_page/removing-product-changes-price-accordingly.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Delivery treshhold | Is 10% and 0euro with purchase over 50 euros  | As expected | Pass
 
-<details>
-
-<summary>Delivery treshhold</summary>
-
 ![Delivery treshhold](documentation/testings/images/shopping_basket_page/delivery-treshhold.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Success messages | Feedback messages are given with each action | As expected | Pass
 
-<details>
-
-<summary>Success messages</summary>
-
 ![Success messages](documentation/testings/images/contact_page/contact-form-saves-to-admin-panel.JPG)
-</details>
 
 <br>
 
@@ -776,67 +757,56 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Adding a product message | Success message when product is added | As expected | Pass
 
-<details>
-
-<summary>Adding a product message</summary>
 
 ![Adding a product message](documentation/testings/images/product_management_page/adding-a-product-message-success.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Cancel button | Redirects user to all product page | As expected | Pass
 
-<details>
-
-<summary>Cancel button</summary>
-
 ![Cancel button](documentation/testings/images/product_management_page/cancel-button.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Adding a product | all Form fileds are blank | As expected | Pass
 
-<details>
-
-<summary>Adding a product</summary>
 
 ![Adding a product](documentation/testings/images/product_management_page/adding-a-product-all-form-fields.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Edit a product | Form is prefilled with the product info | As expected | Pass
 
-<details>
-
-<summary>Edit a product</summary>
 
 ![Edit a product](documentation/testings/images/product_management_page/edit-a-product.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Edit product image | Edit Image field contains the actual picture | As expected | Pass
 
-<details>
-
-<summary>Edit product image</summary>
 
 ![Edit product image](documentation/testings/images/product_management_page/edit-product-image.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Removing image | Default picture will be seen on product  | As expected | Pass
 
-<details>
-
-<summary>Removing image</summary>
-
 ![Removing image ](documentation/testings/images/product_management_page/removing-image.JPG)
-</details>
 
 <br>
 
@@ -847,107 +817,85 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 All of a users orders are deleted on profile deletion | orders removed from database | As expected | Pass
 My Profile link renders Profile page | profile.html is shown | As expected | Pass
 
-<details>
-
-<summary>My Profile link renders Profile page</summary>
-
 ![My Profile link renders Profile page](documentation/testings/images/my_profile_page/my-profile-link-renders-profile-page.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 User information is displayed on Profile page | Name and Address fields shown | As expected | Pass
 
-<details>
-
-<summary>User information is displayed on Profile page</summary>
 
 ![User information is displayed on Profile page](documentation/testings/images/my_profile_page/user-information-is-displayed-on-profile-page.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Update button saves updated form | Message "Profile updated successfully" shown | As expected | Pass
 
-<details>
-
-<summary>Update button saves updated form</summary>
 
 ![Update button saves updated form](documentation/testings/images/my_profile_page/update-button-saves-updated-form.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 User order history shown on Profile Orders tab | Orders tab shows all past orders | As expected | Pass
 
-<details>
-
-<summary>User order history shown on Profile Orders tab</summary>
 
 ![User order history shown on Profile Orders tab](documentation/testings/images/my_profile_page/user-order-history-shown-on-profile-orders-tab.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Delete Account tab opens account delete message | message "Warning! Account deletion is permanent. Proceed?" shown | As expected | Pass
 
-<details>
-
-<summary>Delete Account tab opens account delete message</summary>
-
 ![Delete Account tab opens account delete message](documentation/testings/images/my_profile_page/delete-account-tab-opens-account-delete-message.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Delete Account button opens account delete confirmation page | user-delete with user id in url shown | As expected | Pass
 
-<details>
-
-<summary>Delete Account button</summary>
-
 ![Delete Account button](documentation/testings/images/my_profile_page/delete-account-button.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Return button on user_delete page redirects back to profile | profile.html renders | As expected | Pass
 
-<details>
-
-<summary>Return button</summary>
-
 ![Return button](documentation/testings/images/my_profile_page/return-button-1.JPG)
-</details>
-
-<details>
-
-<summary>Return button</summary>
 
 ![Return button](documentation/testings/images/my_profile_page/return-button-2.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Confirm button on user_delete page redirects back to index.html | index.html renders | As expected | Pass
 
-<details>
-
-<summary>Confirm button</summary>
-
 ![Confirm button](documentation/testings/images/my_profile_page/confirm-button-on-user_delete-page-redirects-back-to-index.JPG)
-</details>
+
+---
+---
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Confirmation message on user_delete shows | message "Profile successfully deleted" shown | As expected | Pass
 
-<details>
-
-<summary>Confirmation message</summary>
-
 ![Confirmation message](documentation/testings/images/my_profile_page/confirmation-message-on-user_delete-shows.JPG)
-</details>
 
 <br>
 
@@ -957,89 +905,79 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Clicking on log in | opens log in form | As expected | Pass
 
-<details>
-
-<summary>Clicking on log in</summary>
-
 ![Clicking on log in](documentation/testings/images/logging_pages/clicking-on-log-in.JPG)
-</details>
+
+---
+---
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Submitting log in | User is logged in | As expected | Pass
 
-<details>
-
-<summary>Submitting log in</summary>
 
 ![Submitting log in](documentation/testings/images/logging_pages/submitting-log-out.JPG)
-</details>
+
+---
+---
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Logging in message | success Message shows up| As expected | Pass
 
-<details>
-
-<summary>Logging in message</summary>
-
 ![Logging in message](documentation/testings/images/logging_pages/logging-in-message.JPG)
-</details>
+
+---
+---
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Log in redirection | logged in User is redirected to home page | As expected | Pass
 
-<details>
-
-<summary>Log in redirection</summary>
-
 ![Log in redirection](documentation/testings/images/logging_pages/log-in-redirection.JPG)
-</details>
+
+---
+---
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Clicking on log out | opens log out form | As expected | Pass
 
-<details>
-
-<summary>Clicking on log out</summary>
 
 ![Clicking on log out](documentation/testings/images/logging_pages/clicking-on-log-out.JPG)
-</details>
+
+---
+---
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Submitting log out | User is logged out | As expected | Pass
 
-<details>
-
-<summary>Submitting log out</summary>
 
 ![Submitting log out](documentation/testings/images/logging_pages/submitting-log-out.JPG)
-</details>
+
+---
+---
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Logging out message | success Message shows up| As expected | Pass
 
-<details>
-
-<summary>Logging out message</summary>
-
 ![Logging out message](documentation/testings/images/logging_pages/logging-out-message.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Log out redirection | logged out User is redirected to home page | As expected | Pass
 
-<details>
-
-<summary>Log out redirection</summary>
-
 ![Log out redirection](documentation/testings/images/logging_pages/log-out-redirection.JPG)
-</details>
 
 <br>
 
@@ -1051,12 +989,7 @@ Completing submission | Redirects to subscribe success page | As expected | Pass
 Completing unsubscribe form | Redirects to unsubscribe success page | As expected | Pass
 Not inserting email | Error message | As expected | Pass
 
-<details>
-
-<summary>Not inserting email</summary>
-
 ![Not inserting email](documentation/testings/images/subscribing_pages/inserting-incomplete-email.JPG)
-</details>
 
 <br>
 
@@ -1066,37 +999,25 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Payment being processed | Icon and overlay appears when payment is being processed | As expected | Pass
 
-<details>
-
-<summary>Payment being processed</summary>
-
 ![Payment being processed](documentation/testings/images/stripe_payment/payment-being-processed.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Confirmation page | order number created | As expected | Pass
 
-<details>
-
-<summary>Confirmation page</summary>
-
 ![Confirmation page](documentation/testings/images/stripe_payment/confirmation-page-order-number-created.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Confirmation page | email sent to correct email | As expected | Pass
 
-<details>
-
-<summary>onfirmation page</summary>
-
 ![Confirmation page](documentation/testings/images/stripe_payment/confirmation-page-email-sent.JPG)
-</details>
-
-Feature Tested | Expected Result | Actual Result | Pass/Fail
----------------|-----------------|---------------|----------
 
 <br>
 
@@ -1106,78 +1027,64 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Adding product shows feedback message | Message shows in top right corner | As expected | Pass
 
-<details>
-
-<summary>Adding product shows feedback message</summary>
-
 ![Adding product shows feedback message](documentation/testings/images/checkout_page/add-to-cart-button-shows-success-message.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Product details shown in Basket | Products are arranged in a table | As expected | Pass
 
-<details>
-
-<summary>Product details shown in Basket</summary>
 
 ![Product details shown in Basket](documentation/testings/images/checkout_page/product-details-shown-in-cart.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Discount price of product shown in basket | Products show dicount price | As expected | Pass
 
-<details>
-
-<summary>Discount price of product shown in basket</summary>
 
 ![Delivery treshhold](documentation/testings/images/checkout_page/sale-price-of-product-shown-in-cart.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Update quantity button updates subtotal | Subtotal calculated correctly | As expected | Pass
 
-<details>
-
-<summary>Update quantity button updates subtotal</summary>
-
 ![Update quantity button updates subtotal](documentation/testings/images/checkout_page/update-quantity-button-updates-subtotal.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Delete product button removes product | Product is removed from Basket| As expected | Pass
 
-<details>
-
-<summary>Delete product button removes product</summary>
-
 ![Delete product button removes product](documentation/testings/images/checkout_page/delete-product-button-deletes-product.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Secure Checkout button opens checkout page | checkout.html renders | As expected | Pass
 
-<details>
-
-<summary>Secure Checkout button opens checkout page</summary>
-
 ![Delivery treshhold](documentation/testings/images/checkout_page/secure-checkout-button-shows-checkout-page.JPG)
-</details>
+
+---
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 User details prepoulated when saved | Fields are filled with info| As expected | Pass
 
-<details>
-
-<summary>User details prepoulated when saved</summary>
-
 ![User details prepoulated when saved](documentation/testings/images/checkout_page/user-information-is-prepopulated-if-saved-in-profile.JPG)
-</details>
+
 
 <br>
 
