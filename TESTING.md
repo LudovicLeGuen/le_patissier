@@ -12,20 +12,14 @@ Below is the documentation of my testing process.
     + [CSS](#css)
     + [JavaScript](#javascript)
     + [Python](#python)
-  * [Visual (UI) Testing: Cross Browser and Cross Device Testing](#visual--ui--testing--cross-browser-and-cross-device-testing)
   * [Lighthouse](#lighthouse)
       - [Desktop Results](#desktop-results)
-      - [Mobile Results](#mobile-results)
   * [Manual Testing](#manual-testing)
-  * [Defensive programming testing](#defensive-programming-testing)
     + [Testing User Stories](#testing-user-stories)
-  * [Outstanding Defects](#outstanding-defects)
-  * [Defects of Note](#defects-of-note)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 ## Validation Testing
+
 [W3C](https://validator.w3.org/) was used to validate all pages HTML and CSS of Le Patissier site. 
 
 All Brands Page:
@@ -95,144 +89,130 @@ Profile CSS file:
 
 [JS Hint](https://jshint.com/) was used to validate the JavaScript.
 
-JS Stripe file:
-![js-hint-stripe-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/02c185be-f605-4172-b388-4dad8c3509fe)
+JS Stripe:
+![Stripe](documentation/testings/images/validator/js/js.PNG)
 
 
 ### Python
 
 [Code Institute Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python.
 
-Blog admin py:
-![blog-admin-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/1bb8ef58-3597-4739-8c92-116e58810fe1)
+Basket context py:
+![basket-context](documentation/testings/images/validator/python/basket/urls-linter.PNG)
 
-Blog models py:
-![blog-models-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/39308b0b-acf5-408b-b41e-e828059c1c4b)
+Basket urls py:
+![basket-urls](documentation/testings/images/validator/python/basket/urls-linter.PNG)
 
-Blog views py:
-![blog-views-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/45d6751c-3c22-4e74-9d09-ca6553c88254)
-
-Cart contexts py:
-![cart-contexts-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/531f7a09-8e04-451d-a12d-0cbef04ff6ec)
-
-Cart views py:
-![cart-views-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/54a10889-656c-4e3f-b4c5-dd6c1cb8dde5)
+Basket views py:
+![basket-views](documentation/testings/images/validator/python/basket/views-linter.PNG)
 
 Checkout admin py:
-![checkout-admin-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/5406d88b-e6db-4654-a848-19a585d78bff)
+![checkout-admin](documentation/testings/images/validator/python/checkout/admin-linter.PNG)
 
 Checkout forms py:
-![checkout-forms-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/51e5746d-dd82-4577-85f5-da60eb9a3e97)
+![checkout-forms](documentation/testings/images/validator/python/checkout/forms.PNG)
 
 Checkout models py:
-![checkout-models-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/70620fca-f9f9-4c7f-87bd-97541c8fb3d0)
+![checkout-models](documentation/testings/images/validator/python/checkout/models.PNG)
+
+Checkout signals py:
+![checkout-signals](documentation/testings/images/validator/python/checkout/signals.PNG)
+
+Checkout urls py:
+![checkout-urls](documentation/testings/images/validator/python/checkout/urls.PNG)
 
 Checkout views py:
-![checkout-views-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/daf72e0f-c292-4dfa-bacf-2dc4d52d43cf)
+![checkout-views](documentation/testings/images/validator/python/checkout/views.PNG)
 
 Checkout webhook handler py:
-![checkout-webhook-handler-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/861dc931-5a8d-47eb-bdf2-aca6fca8a745)
+![checkout-webhook-handler](documentation/testings/images/validator/python/checkout/webhooks-handler.PNG)
 
 Checkout webhooks py:
-![checkout-webhooks-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/e61fc8c0-bb62-4711-acfc-a3aec730b089)
+![checkout-webhooks](documentation/testings/images/validator/python/checkout/webhooks.PNG)
+
+Home admin py:
+![home-admin](file:///workspaces/le_patissier/documentation/testings/images/validator/python/home/admin.PNG)
+
+Home forms py:
+![home-form](documentation/testings/images/validator/python/home/forms.PNG)
+
+Home models py:
+![home-models](documentation/testings/images/validator/python/home/forms.PNG)
+
+Home urls py:
+![home-urls](documentation/testings/images/validator/python/home/forms.PNG)
 
 Home views py:
-![home-views-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/fed654dd-987f-45be-95d8-b26d96930ddb)
+![home-views](documentation/testings/images/validator/python/home/forms.PNG)
+
+Marketing forms py:
+![marketing-forms](documentation/testings/images/validator/python/marketing/forms.PNG)
+
+Marketing urls py:
+![marketing-urls](documentation/testings/images/validator/python/marketing/urls.PNG)
+
+Marketing views py:
+![marketing-views](documentation/testings/images/validator/python/marketing/views.PNG)
 
 Products admin py:
-![products-admin-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/7d648d4e-c238-4301-b7b0-ee24fbac8bca)
+![products-admin](documentation/testings/images/validator/python/products/admin.PNG)
+
+Products models py:
+![products-models](documentation/testings/images/validator/python/products/models.PNG)
 
 Products forms py:
-![products-forms-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/b4d42307-12c4-4892-8cd2-1cd64d6922cf)
+![products-forms](documentation/testings/images/validator/python/products/adminform.PNG)
+
+Products urls py:
+![products-urls](documentation/testings/images/validator/python/products/urls.PNG)
 
 Products views py:
-![products-views-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/6eed62b6-cd6a-4512-9937-b7c966482ea9)
+![products-views](documentation/testings/images/validator/python/products/views.PNG)
 
 Profiles forms py:
-![profiles-forms-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/c14a1a5a-2d29-4314-b3f7-916c6c26b9dc)
+![profiles-forms](documentation/testings/images/validator/python/profiles/forms.PNG)
 
 Profiles models py:
-![profiles-models-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/1a1f2d2c-c837-4a7e-98f6-630c25f1a04f)
+![profiles-models](documentation/testings/images/validator/python/profiles/models.PNG)
+
+Profiles urls py:
+![profiles-urls](documentation/testings/images/validator/python/profiles/urls.PNG)
 
 Profiles views py:
-![profiles-views-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/8b63f61d-1da8-433d-8381-d17167bbe040)
+![profiles-views](documentation/testings/images/validator/python/profiles/views.PNG)
 
-Reviews admin py:
-![reviews-admin-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/07e8dd9f-fa68-4eb5-af25-697cc3668375)
 
-Reviews models py:
-![reviews-models-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/cf720354-524d-41d0-b3ce-57acd7d51d25)
-
-Reviews views py:
-![reviews-views-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/bef79bf3-7f00-43d4-a66f-2398e3d8549a)
-
-Test a Wheel settings py:
-![test-a-wheel-settings-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/169e2507-d508-442e-a6f9-697b169c946e)
-
-Test a Wheel urls py:
-![test-a-wheel-urls-python-valid](https://github.com/PPindel/test-a-wheel/assets/114284732/8f1e5575-ab4e-4307-8607-827f3147b4b2)
-
-## Lighthouse
-
-For the performance, accessibility, best practices, and SEO of the site for mobile and desktop I used the Chrome Lighthouse tool:
+### Lighthouse
 
 #### Desktop Results
+
+All products Page:
+![image](documentation/lighthouse/all-products-landing page.PNG)
+
+
+Basket Page:
+![image](documentation/lighthouse/basket-lighthouse.PNG)
+
+
+Checkout Page:
+![image](documentation/lighthouse/checkout-lighthouse.PNG)
+
 
 Landing Page:
 ![image](documentation/lighthouse/landing-page-lighthouse.PNG)
 
 
-All products Page:
-![image](documentation/lighthouse/all-products-landing page.PNG)
+Newsletter Page:
+![image](documentation/lighthouse/newsletter-lighthouse.PNG)
 
 
 Product details Page:
 ![image](documentation/lighthouse/product-details-lighthouse.PNG)
 
 
-Blog Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/7f87c0b6-54c5-48ab-91f0-98a0406414d7)
+Profile Page:
+![image](documentation/lighthouse/profile-lighthouse.PNG)
 
-
-Reviews Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/d0ed979c-84ba-4356-ab2f-a463552adf05)
-
-
-Checkout Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/0dacd201-2493-445f-8360-4104391854ff)
-
-
-- Desktop performed well on all major pages of the site.
-- The 83-point score for Best Practices is due to the scripts beyond my control (e.g. Mailchimp)
-
-#### Mobile Results
-
-Index Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/6e75fbb3-95f4-40fc-a007-a135afade965)
-
-
-Services Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/063f0293-69d3-4cb4-8b5d-f64d44aeb1e9)
-
-
-User Profile:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/a5635fbf-2b7d-41b8-bf54-52636865f78d)
-
-
-Blog Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/515248ef-64ac-46e3-8966-afaf264e2d57)
-
-
-Reviews Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/ed2f9137-865a-43a7-8d7e-16c485116747)
-
-
-Checkout Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/422b7b3d-e781-40c5-97df-2fb450d678b7)
-
-
-- Mobile performed well on all major pages of the site.
-- The 83-point score for Best Practices is due to the scripts beyond my control (e.g. Mailchimp)
 
 ## Manual Testing
 
@@ -246,51 +226,39 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar responsiveness | NavBar resizes according to devices | As expected | Pass
 
-<details>
-<summary>NavBar responsiveness</summary>
 
+NavBar responsiveness
 ![NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-1.JPG)
-</details>
-
-<details>
-<summary>NavBar responsiveness</summary>
 
 ![NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-2.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar categories responsiveness| Categories become burger menu | As expected | Pass
 
-<details>
-<summary>NavBar categories responsiveness</summary>
 
+NavBar categories responsiveness
 ![NavBar categories responsiveness](documentation/testings/images/navbar/navbar-categories-responsiveness-1.JPG)
-</details>
 
-<details>
-<summary>NavBar categories responsiveness</summary>
-
+NavBar categories responsiveness
 ![NavBar categories responsiveness](documentation/testings/images/navbar/navbar-categories-responsiveness-2.JPG)
-</details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar categories hover opening| Categories menus open and close on hover with screens above 992px | As expected | Pass
 
-<details>
-<summary>NavBar categories hover opening</summary>
 
+NavBar categories hover opening
 ![NavBar categories hover opening](documentation/testings/images/navbar/navbar-categories-hover-opening.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Search field | Search field transforms in button with medium screens and lower | As expected | Pass
 
-<details>
-<summary>Search field</summary>
 
+Search field
 ![Search field](documentation/testings/images/navbar/search-field-1.JPG)
 </details>
 
