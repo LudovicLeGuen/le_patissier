@@ -621,3 +621,8 @@ textarea {
     color: white !important;
     border: 1px solid #060B06;
 }
+
+#div_id_country{
+    border: 1px;
+    border-color: black;
+}

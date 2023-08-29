@@ -178,16 +178,16 @@ For the performance, accessibility, best practices, and SEO of the site for mobi
 
 #### Desktop Results
 
-Index Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/6ac84fc1-a0dc-494a-9335-aafd7a031b5d)
+Landing Page:
+![image](documentation/lighthouse/landing-page-lighthouse.PNG)
 
 
-Services Page:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/16b4f0b9-bea9-41df-9aba-8a48e237f12e)
+All products Page:
+![image](documentation/lighthouse/all-products-landing page.PNG)
 
 
-User Profile:
-![image](https://github.com/PPindel/test-a-wheel/assets/114284732/c9f45fbb-14d3-4980-b90a-07ef7f90df29)
+Product details Page:
+![image](documentation/lighthouse/product-details-lighthouse.PNG)
 
 
 Blog Page:
