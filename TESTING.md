@@ -226,113 +226,75 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar responsiveness | NavBar resizes according to devices | As expected | Pass
 
-
-NavBar responsiveness
-![NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-1.JPG)
+[NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-1.JPG)
 
 ![NavBar responsiveness](documentation/testings/images/navbar/navbar-responsiveness-2.JPG)
-
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar categories responsiveness| Categories become burger menu | As expected | Pass
 
-
-NavBar categories responsiveness
 ![NavBar categories responsiveness](documentation/testings/images/navbar/navbar-categories-responsiveness-1.JPG)
 
-NavBar categories responsiveness
 ![NavBar categories responsiveness](documentation/testings/images/navbar/navbar-categories-responsiveness-2.JPG)
+
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 NavBar categories hover opening| Categories menus open and close on hover with screens above 992px | As expected | Pass
 
-
 NavBar categories hover opening
 ![NavBar categories hover opening](documentation/testings/images/navbar/navbar-categories-hover-opening.JPG)
 
-
-Feature Tested | Expected Result | Actual Result | Pass/Fail
----------------|-----------------|---------------|----------
-Search field | Search field transforms in button with medium screens and lower | As expected | Pass
-
-
-Search field
-![Search field](documentation/testings/images/navbar/search-field-1.JPG)
-</details>
-
-<details>
-<summary>Search field</summary>
-
-![Search field](documentation/testings/images/navbar/search-field-2.JPG)
-</details>
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Search | Inserting a term gives a list of products | As expected | Pass
+Search field | Search field transforms in button with medium screens and lower | As expected | Pass
 
-<details>
-<summary>Search</summary>
+![Search field](documentation/testings/images/navbar/search-field-1.JPG)
 
-![Search]()
-</details>
+![Search field](documentation/testings/images/navbar/search-field-2.JPG)
+
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Account icon | Account icon opens on click only | As expected | Pass
 
-<details>
-<summary>Account icon</summary>
-
 ![Account icon](documentation/testings/images/navbar/account-icon-on-one-click.JPG)
-</details>
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Account icon | Account icon is different for logged in admins and users | As expected | Pass
 
-<details>
-<summary>Account icon</summary>
-
 ![Account icon](documentation/testings/images/navbar/account-icon-admin-login.JPG)
-</details>
-
-<details>
-<summary>Account icon</summary>
 
 ![Account icon](documentation/testings/images/navbar/account-icon-user-login.JPG)
-</details>
+---
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Account icon | Account icon shows log in and register for unlogged users | As expected | Pass
 
-<details>
-<summary>Account icon</summary>
-
 ![Account icon](documentation/testings/images/navbar/account-icon-unlogged-users.JPG)
-</details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Shopping basket | redirects to the shopping basket template | As expected | Pass
 
-<details>
-<summary>Shopping basket</summary>
-
 ![Shopping basket](documentation/testings/images/navbar/shopping-basket.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Action messages | messages appears on the top right corner consistenly | As expected | Pass
 
-<details>
-<summary>Action messages</summary>
-
 ![Action messages](documentation/testings/images/navbar/action-messages.JPG)
-</details>
 
 
 #### Footer
@@ -341,84 +303,62 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Footer responsiveness | Footer layout changes according to devices | As expected | Pass
 
-<details>
-<summary>Footer responsiveness</summary>
 
 ![Footer responsiveness](documentation/testings/images/footer/footer-responsiveness-1.JPG)
-</details>
 
-<details>
-<summary>Footer responsiveness</summary>
 
 ![Footer responsiveness](documentation/testings/images/footer/footer-responsiveness-2.JPG)
-</details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Footer links | All external links open a new tab in the browser | As expected | Pass
 
-<details>
-<summary>Footer links</summary>
 
 ![Footer links ](documentation/testings/images/footer/footer-links-1.JPG)
-</details>
 
-<details>
-<summary>Footer links</summary>
 
 ![Footer links ](documentation/testings/images/footer/footer-links-2.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Footer links | All links redirects to the correct brand | As expected | Pass
 Footer brands and legal links | Links are underlined on hover | As expected | Pass
 
-<details>
-<summary>Footer brands and legal links</summary>
-
 ![Footer brands and legal links](documentation/testings/images/footer/footer-brands-and-legal-links.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Newsletter button | Button redirects to Newsletter registration form | As expected | Pass
 
-<details>
-<summary>Newsletter button</summary>
 
 ![Newsletter button](documentation/testings/images/footer/newsletter-button.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Newsletter button hover | Button changes color on hover | As expected | Pass
 
-<details>
-<summary>Newsletter button hover</summary>
 
 ![Newsletter button hover](documentation/testings/images/footer/newsletter-button-hover.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Newsletter button responsiveness | Enveloppe icons dissapear on screens snmaller than 347px | As expected | Pass
 
-<details>
-<summary>Newsletter button responsiveness</summary>
 
 ![Newsletter button responsiveness](documentation/testings/images/footer/newsletter-button-responsiveness.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Contact button | Button redirects to contact us form | As expected | Pass
 
-<details>
-<summary>Contact button</summary>
+
 
 ![Contact button](documentation/testings/images/footer/contact-button.JPG)
-</details>
 
 <br>
 
@@ -428,51 +368,37 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Hero image resizes on mobile | Images resize on mobile | As expected | Pass
 
-<details>
-<summary>Hero image resizes on mobile</summary>
-
 ![Hero image resizes on mobile](documentation/testings/images/landing_page/hero-image-resizes-on-mobile.JPG)
-</details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Title size reduces on smaller screens | Title gets smaller | As expected | Pass
 
-<details>
-<summary>Title size reduces on smaller screens</summary>
 
 ![Title size reduces on smaller screens](documentation/testings/images/landing_page/title-size-reduces-on-smaller-screens.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Shop now button reduces size | Buttons gets smaller on small screens | As expected | Pass
 
-<details>
-<summary>Shop now button reduces size</summary>
 
 ![Shop now button reduces size](documentation/testings/images/landing_page/shop-now-button-reduces-size.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Shop now button redirection | Button redirects to all products | As expected | Pass
 
-<details>
-<summary>Shop now button redirection</summary>
 
 ![Shop now button redirection](documentation/testings/images/landing_page/shop-now-button-redirection.JPG)
-</details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Why shopping with us section responsiveness | Boxes and title rearrange harmoniously | As expected | Pass
 
-<details>
-<summary>Why shopping with us section responsiveness</summary>
-
 ![Why shopping with us section responsiveness](documentation/testings/images/landing_page/why-shopping-with-us-section-responsiveness.JPG)
-</details>
+
 
 <br>
 
@@ -482,21 +408,16 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 All products | Shows all products by default | As expected | Pass
 
-<details>
-<summary>All products</summary>
 
 ![All products](documentation/testings/images/all_products_page/all-products.JPG)
-</details>
+
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
 Product card layout | 4 cards per row on large screens | As expected | Pass
 
-<details>
-<summary>Product card layout</summary>
 
 ![Product card layout](documentation/testings/images/all_products_page/product-card-layout.JPG)
-</details>
 
 Feature Tested | Expected Result | Actual Result | Pass/Fail
 ---------------|-----------------|---------------|----------
