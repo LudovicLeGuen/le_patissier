@@ -530,20 +530,24 @@ The developper simply did not have enough time to correct it.
 [Back to top ⇧](#le-patissier)
 
 ## Testing
-Refer to this [page](TESTING.md) please
+Refer to this [page](TESTING.md) please.
 
 ## Deployment
 The site was developped on Codeanywhere, commiting and pushing to github.
 
 ### Deployment guide
-Refer to this [page](deployment.md) please
+Refer to this [page](deployment.md) please.
    
 ## Credits 
 ### Code 
-The developer has consulted countless times Stack Overflow and W3Schools in order to build the website.
+The developer has consulted countless times Stack Overflow and W3Schools in order to build the website. 
+<br>
 The development choices were HEAVILY inspired by Boutique Ado, the code instute walkthrough website.
+<br>
 Also, several fellow students PP5 works were consulted for inspirations purposes but the work by [Victoria Traynor](https://github.com/VictoriaT87/level_up_loot_vt/tree/main) has been particularly admired by the developper.
-In fact the deployment.md page has been simply copy pasted from her github [deplyment guide of victoria](https://github.com/VictoriaT87/level_up_loot_vt/blob/main/documentation/deployment.md). When you can't make it better, copy it! All credits goes to her on this one. 
+<br>
+In fact the deployment.md page has been simply copy pasted from her github: [deployment guide of victoria](https://github.com/VictoriaT87/level_up_loot_vt/blob/main/documentation/deployment.md). When you can't make it better, copy it! All credits goes to her on this one. 
+<br>
 All content for the website has been copied from the French website [Le Meilleur du chef](https://www.meilleurduchef.com/) All pictures, descriptions and details of the products are a direct copy of their website. The developper does not have any intention to sell these products. This website is purely educational in scope. 
 
 
