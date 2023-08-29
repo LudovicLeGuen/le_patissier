@@ -60,7 +60,8 @@ def unsubscribe_view(request):
         if form.is_valid():
             try:
                 form_email = form.cleaned_data['email']
-                form_email_hash = hashlib.md5(form_email.encode('utf-8').lower()).hexdigest()
+                form_email_hash = hashlib.md5(form_email.encode
+                                              ('utf-8').lower()).hexdigest()
                 member_update = {
                     'status': 'unsubscribed',
                 }
